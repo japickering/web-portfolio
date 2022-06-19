@@ -1,0 +1,164 @@
+{
+	"posts": [
+		{
+			"date": "07/10/2021 ",
+			"slug": "2021-10-7-post-title",
+			"title": "5 ways to use SASS to supercharge your design workflow",
+			"author": "James Pickering",
+			"summary": "Sass has useful features that aren’t supported in regular CSS: nesting, mixins, and modules that help you write clean and maintainable CSS code.",
+			"img": "/posts/macbook-desk.jpg",
+			"alt": "kung fu",
+			"content": [
+				{
+					"subtitle": "Live Sass Compiler",
+					"text": "This free plugin for VS Code listens for changes in your sass files which compiles to css files on the fly. You can focus on styling the HTML in your page without worrying about setting up a framework in the initial design phase. Use with Live Server plugin, also for VS Code for best results.",
+					"code": ""
+				},
+				{
+					"subtitle": "Sass Variables",
+					"text": "You can save colours or CSS property values for re-use. Sass uses the $ symbol to make something a variable. SASS variables can save percentages, numbers or strings. Even rgb/hex/hsl values for colour values.",
+					"code": "// sass variables\r\n$num: 30%;\r\n$maxwidth: 100%;\r\n$primary: rbg(255, 0, 0);"
+				},
+				{
+					"subtitle": "Nesting",
+					"text": "Take a look at the following SASS code example. You can keep your styles organised in a nested tree way to prevent style rules and selectors applying to unintended HTML tags by doing so. When SASS compiles down to CSS it will convert it to the regular CSS syntax.",
+					"code": "// SASS nesting example \r\nnav {\r\n ul{\r\n  margin: 0;\r\n  padding: 0;\r\n  list-style: none;\r\n }\r\n li {\r\n  display: inline-block;\r\n }\r\n a {\r\n  display: block;\r\n  padding: 6px 12px;\r\n  text-decoration: none;\r\n }\r\n}"
+				},
+				{
+					"subtitle": "Modules",
+					"text": "You can keep your Sass organised and easier to manage by separate them into modules. Include them into your main Sass file by using the @import directive. Your Sass compiler will inject the modules into your main css stylesheet.",
+					"code": "@import \"styles/utils\"; \r\n@import \"styles/code\";"
+				},
+				{
+					"subtitle": "Mixins",
+					"text": "Re-use math functions or re-use code blocks to automate repetitive tasks like zebra striping table rows with ease. Define your mixin first then include it like the following example",
+					"code": "@mixin large-text {\r\n font-family: Arial;\r\n font-size: 20px;\r\n font-weight: bold;\r\n color: #ff0000;\r\n}\r\n\r\nh2 {\r\n  @include large-text;\r\n}"
+				}
+			]
+		},
+		{
+			"date": "17/10/2021",
+			"slug": "2021-10-17-top-10-css",
+			"title": "Top CSS Techniques to boost your workflow today",
+			"author": "James Pickering",
+			"summary": "Raise your CSS game with these simple techniques.",
+			"img": "/posts/colour-pencils.jpg",
+			"alt": "coloured pencils",
+			"content": [
+				{
+					"subtitle": "",
+					"text": "Use custom properties to create global themes.",
+					"code": ":root {\r\n  --bg-primary: blue; --bg-secondary: orange; \r\n}"
+				},
+				{
+					"subtitle": "",
+					"text": "and assign them to style rules using keyword var()",
+					"code": ".btn { \r\n  background: var(--bg-primary); \r\n} "
+				},
+				{
+					"subtitle": "Grid templates",
+					"text": "Take control using grid templates for rows or columns.",
+					"code": ".container {\r\n  display: grid;\r\n  grid-template-columns: repeat(auto-fill,minmax(320px,1fr));\r\n} "
+				},
+				{
+					"subtitle": "",
+					"text": "create a grid gap in units that match your use case.",
+					"code": ".container {\r\n  grid-gap: 2rem 2rem;\"\r\n} }"
+				},
+				{
+					"subtitle": "",
+					"text": "Dark theme OS support",
+					"code": "@media screen and (prefers-color-scheme: dark) {\r\n// dark theme\r\n}"
+				},
+				{
+					"subtitle": "",
+					"text": "Light theme OS support",
+					"code": "@media screen and (prefers-color-scheme: light) {\r\n// light theme\r\n}"
+				}
+			]
+		},
+		{
+			"date": "25/10/2021",
+			"slug": "2021-10-25-responsive-sidebar-javascript",
+			"title": "Create a Responsive Sidebar in CSS and JavaScript - Part 1",
+			"author": "James Pickering",
+			"summary": "In this tutorial I'll assume you have a basic knowledge of HTML, CSS and vanilla Javascript. With a bit of effort you can apply the techniques here to any future JS framework. In part one of this tutorial I explain how I created the responsive sidebar for my portfolio.",
+			"img": "/posts/responsive-sidebar.png",
+			"alt": "screenshot of a sidebar menu",
+			"content": [
+				{
+					"subtitle": "Assemble the Blueprint",
+					"text": "Keep it simple and decide how many links to show and which icons to use. In my case I use the free Font Awesome CSS library because it offers hundreds of system icons in SVG format which scale with no loss of quality. In this html I've swapped the anchor tags for <Link> components because my React app uses a router library. Then I clone the menu items for as many links as I need.",
+					"code": "//nav.scss\r\n<nav id=\"navbar\" className=\"navbar\" tabIndex=\"0\">\r\n <ul>\r\n   <li>\r\n    <Link to=\"/home/\" className=\"nav-item\">\r\n      <i className=\"fa fa-home\"></i>\r\n      home \r\n    </Link>\r\n </li>\r\n</nav>"
+				},
+				{
+					"text": "Then I repeat the process for the sidebar menu.",
+					"code": "//nav.scss ..\r\n<nav id=\"sidebar\" className=\"sidebar\">\r\n  <button className=\"btn-toggle\" aria-label=\"toggle button\">\r\n    {toggle === true ? <span>&times;</span> : <span>&#8801;</span>}\r\n  </button>\r\n  <div className=\"overlay\" aria-label=\"close button\"></div>\r\n  <ul id=\"slide-menu\" className=\"slide-menu\" tabIndex=\"0\">\r\n    <li className=\"home\">\r\n      <Link to=\"/\" className=\"nav-item\">\r\n\t<i className=\"fa fa-home\"></i>\r\n        home\r\n     </Link>\r\n    </li>\r\n  </ul>\r\n</nav>"
+				},
+				{
+					"subtitle": "SASS Modules",
+					"text": "I wrote my CSS for this project using SASS stylesheets which are imported into main.scss. Live SASS compiler watches sass file changes and compiles these modules into main.css whenever I save my code changes. By specifying CSS classes like this the JS code I produce is cleaner and maintainable than if I had simply chained styles to variables in JS. The main CSS looks like this:",
+					"code": "@import \"styles/nav\";\r\n@import \"styles/mobile\";"
+				},
+				{
+					"code": "//nav.scss..\r\n.navbar {\r\n  ul {\r\n   margin-top: 2%;\r\n     li {\r\n       display: inline-block;\r\n       margin-left: 20px;\r\n\r\n       a {\r\n\tdisplay: block;\r\n\ttext-transform: capitalize;\r\n       }\r\n     }\r\n   }\r\n}"
+				},
+				{
+					"subtitle": "Layer the Sidebar",
+					"text": "Define the sidebar as a floating menu and nested its child elements. The slide menu is positioned at the top right below the main header for clear visual separation. I'm not hiding the menu using display:none so it is important to set pointer-events: none; to prevent the user accidentally clicking on invisble while button the menu is hidden.",
+					"code": "//nav.scss..\r\n.sidebar {\r\n  display: block;\r\n  position: absolute;\r\n  top: 0px;\r\n  right: 0px;\r\n  color: #fff;\r\n  z-index: 10;\r\n       \r\n .btn-toggle {\r\n    display: block;\r\n    padding: 0;\r\n    margin-top: 20px;\r\n    margin-right: 25px;\r\n    \r\n    span {\r\n      font-size: 24px;\r\n    }\r\n  }\r\n       \r\n  .slide-menu {\r\n      position: absolute;\r\n      top: 70px;\r\n      right: 0px;\r\n      padding: 2%;\r\n      background: #111;\r\n      min-height: 100vh;\r\n      width: 0px;\r\n      opacity: 0;\r\n      pointer-events: none;\r\n      transition: all 0.5s;\r\n      z-index: 99;\r\n      \r\n      &.active {\r\n        width: 200px;\r\n        opacity: 1;\r\n        pointer-events: auto;\r\n      }\r\n       \r\n      li {\r\n        display: block;\r\n        background: inherit;\r\n        transition: all 0.5s;\r\n       \r\n      a {\r\n        display: block;\r\n        margin: 10px 15px;\r\n        padding: 10px;\r\n        text-transform: capitalize;\r\n      }\r\n       \r\n      &:hover,\r\n      &:focus,\r\n      &.active {\r\n        background: var(--primary);\r\n\r\n        .nav-item {\r\n         color: var(--dark);\r\n        }\r\n      }\r\n    }\r\n  }\r\n}"
+				},
+				{
+					"subtitle": "Overlay",
+					"text": "The overlay doubles up as a dismiss button in a layer under the sidebar menu. In my original code I have it nested in the sidebar class but shown here for brevity. We must use z-index to control the stacking order and add a cursor pointer to signal that it's a clickable hotspot.",
+					"code": "//nav.scss..\r\n.overlay {\r\n   position: absolute;\r\n   width: 0px;\r\n   min-height: 100vh;\r\n   top: 70px;\r\n   right: 0px;\r\n   background: #111;\r\n   opacity: 0;\r\n   z-index: 10;\r\n   // transition: all 0.5s;\r\n\r\n   &.active {\r\n     width: 800px;\r\n     opacity: 0.5;\r\n     cursor: pointer;\r\n   }\r\n }"
+				},
+				{
+					"subtitle": "Finishing up with Media Queries",
+					"text": "Next I toggle the menus depending on the browser window width. I can specify display: none; for each media query so one of them is present in the DOM tree."
+				},
+				{
+					"subtitle": "",
+					"text": "It's important to emphasise the browser responds to CSS media queries as the browser window size changes at run time or when a user resizes the window. So I created 2 media queries: min-width, then a max-width after that so the display toggles between the two accordingly. In this way mobile break points take precedence over desktop defaults. That about wraps it up this part. I'll see you in the next one.",
+					"code": "//mobile.scss\r\n@media screen and (min-width: 820px) {\r\n  .sidebar {\r\n    display: none;\r\n   }\r\n}\r\n \r\n@media screen and (max-width: 820px) {\r\n  .navbar {\r\n    display: none;\r\n  }\r\n}"
+				}
+			]
+		},
+		{
+			"date": "01/11/2021",
+			"slug": "2021-11-01-responsive-sidebar-javascript-pt2",
+			"title": "Extend the Sidebar using ReactJS - Part 2",
+			"author": "James Pickering",
+			"summary": "In part one, I showed you how I wrote the HTML and CSS for the sidebar. In this part I'll walk you through how I built the sidebar using React hooks and arrow functions, and applying code encapsulation. This is a good thing because I can control sidebar features independently of other components.",
+			"img": "",
+			"alt": "",
+			"content": [
+				{
+					"subtitle": "React Hooks to control menu state",
+					"text": "I've imported useState and useEffect which will come in useful later on.",
+					"code": "// SideMenu.js\r\nimport React, { useState, useEffect } from \"react\";\r\nimport { Link } from \"react-router-dom\";\r\n\r\nexport default function SideMenu() {\r\n  const [toggle, setToggle] = useState(false);\r\n  const [active, setActive] = useState(\"home\");\r\n  \r\n  return ()\r\n}"
+				},
+				{
+					"subtitle": "Window resize event listener",
+					"text": "useEffect has a dependency array which must be empty when we want it to fire once as in this scenario when the component is mounted.",
+					"code": "// SideMenu.js\r\nimport React, { useState, useEffect } from \"react\";\r\nimport { Link } from \"react-router-dom\";\r\n\r\nexport default function SideMenu() {\r\n  const [toggle, setToggle] = useState(false);\r\n  const [active, setActive] = useState(\"home\");\r\n  \r\n  useEffect(() => {\r\n    window.addEventListener(\"resize\", () => {\r\n      setActive(\"home\");\r\n      closeMenu();\r\n    });\r\n  }, []);\r\n\r\n  return ()\r\n}"
+				},
+				{
+					"subtitle": "Scrolling behaviour",
+					"text": "Next I imported a reusable library function scrollUp from libs.js. I setup this up to smoothly scroll the window to the top whenever the sidebar is toggled open. Note the North American spelling of the property name behavior.",
+					"code": "// libs.js \r\nexport function scrollUp() {\r\n  window.scroll({\r\n    top: 0, \r\n    left: 0,\r\n    behavior: \"smooth\",\r\n  });\r\n}"
+				},
+				{
+					"subtitle": "Toggle menu functions",
+					"text": "Saving the sidemenu and overlay as variables and adding or removing the active class takes care of styling when the openMenu or closeMenu is called. Then the toggle boolean is set to keep the UI state in sync. Also if the window gets resized or the global home button is clicked the menu state is initialised and hidden from view.",
+					"code": "// SideMenu.js\r\nimport React, { useState, useEffect } from \"react\";\r\nimport { Link } from \"react-router-dom\";\r\n\r\nexport default function SideMenu() {\r\n  const [toggle, setToggle] = useState(false);\r\n  const [active, setActive] = useState(\"home\");\r\n\r\n  const openMenu = () => {\r\n    const slidemenu = document.querySelector(\".slide-menu\");\r\n    const overlay = document.querySelector(\".overlay\");\r\n    slidemenu.classList.add(\"active\");\r\n    overlay.classList.add(\"active\");\r\n    setToggle(true);\r\n    scrollUp();\r\n  };\r\n\r\n  const closeMenu = () => {\r\n    const slidemenu = document.querySelector(\".slide-menu\");\r\n    const overlay = document.querySelector(\".overlay\");\r\n    slidemenu.classList.remove(\"active\");\r\n    overlay.classList.remove(\"active\");\r\n    setToggle(false);\r\n  };\r\n\r\n  const onToggle = (e) => {\r\n    e.preventDefault();\r\n    toggle === true ? closeMenu() : openMenu();\r\n  };\r\n\r\n  useEffect(() => {\r\n    closeMenu();\r\n    const home = document.getElementById(\"home\");\r\n    home.addEventListener(\"click\", function (e) {\r\n      setActive(\"home\");\r\n      closeMenu();\r\n    });\r\n\r\n    window.addEventListener(\"resize\", () => {\r\n      setActive(\"home\");\r\n      closeMenu();\r\n    });\r\n  }, []);\r\n\r\n  return ()\r\n}"
+				},
+				{
+					"subtitle": "Binding the click event handlers",
+					"text": "In this section I am using ternary statements to swap the class names based on the active state so that the active menu item is highlighted when navigating to a new route in the app.",
+					"code": "// SideMenu.js\r\nexport default function SideMenu() {\r\n// collpased code\r\n\r\n  return (\r\n   <nav id=\"sidebar\" className=\"sidebar\">\r\n     <button className=\"btn-toggle\" aria-label=\"toggle button\" \r\n       onClick={(e) => { onToggle(e); }} > \r\n         {toggle === true ? <span>&times;</span> : <span>&#8801;</span>}\r\n     </button>\r\n     <div className=\"overlay\" aria-label=\"close button\"\r\n       onClick={() => closeMenu()} >\r\n     </div>\r\n\r\n     <ul id=\"slide-menu\" className=\"slide-menu\" tabIndex=\"0\">\r\n       <li className={active === \"home\" ? \"active\" : \"\"}>\r\n         <Link to=\"/\" className=\"nav-item\" onClick={() => { closeMenu(); setActive(\"home\"); }} >\r\n           <i className=\"fa fa-home\"></i> home \r\n         </Link>\r\n       </li>\r\n\r\n       <li className={active === \"about\" ? \"active\" : \"\"}>\r\n         <Link to=\"/about/\" className=\"nav-item\" onClick={() => { setActive(\"about\"); closeMenu(); }} >\r\n           <i className=\"fa fa-file\"></i> about \r\n         </Link>\r\n       </li>\r\n\r\n       <li className={active === \"blog\" ? \"active\" : \"\"}>\r\n         <Link to=\"/blog/\" className=\"nav-item\" onClick={() => { setActive(\"blog\"); closeMenu(); }} >\r\n           <i className=\"fa fa-edit\"></i> blog \r\n         </Link>\r\n       </li>\r\n\r\n       <li className={active === \"faqs\" ? \"active\" : \"\"}>\r\n         <Link to=\"/faqs/\" className=\"nav-item\" onClick={() => { setActive(\"faqs\"); closeMenu(); }} >\r\n           <i className=\"fa fa-question-circle\"></i> FAQs \r\n         </Link>\r\n       </li>\r\n\r\n       <li className={active === \"contact\" ? \"active\" : \"\"}>\r\n         <Link to=\"/contact/\" className=\"nav-item\" onClick={() => { setActive(\"contact\"); closeMenu(); }} >\r\n           <i className=\"fa fa-comment\"></i> contact \r\n         </Link>\r\n       </li>\r\n\r\n     </ul>\r\n  </nav>\r\n  );\r\n}"
+				}
+			]
+		}
+	]
+}

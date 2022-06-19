@@ -1,0 +1,138 @@
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+section .content {
+  margin: 1em;
+  border-radius: 0.3rem;
+}
+
+section .headline {
+  color: var(--light);
+}
+
+section .subtitle {
+  color: var(--primary);
+}
+
+.faqs,
+.contact {
+  min-height: 70vh;
+}
+
+.hero,
+.contact {
+  padding: 5px;
+  background: var(--hero-gradient);
+  color: var(--light);
+}
+
+.hero .title,
+.contact .title {
+  color: var(--accent);
+}
+
+.hero li,
+.contact li {
+  line-height: 1.5em;
+}
+
+.hero li a,
+.contact li a {
+  margin: 1em;
+  color: var(--light);
+  font-size: 1.2em;
+}
+
+.hero li a:hover, .hero li a:focus,
+.contact li a:hover,
+.contact li a:focus {
+  color: var(--accent);
+  opacity: 1;
+  -webkit-animation: hoverfade 0.3s ease-in;
+          animation: hoverfade 0.3s ease-in;
+}
+
+.hero {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero .logo {
+  width: 100px;
+  height: 100px;
+}
+
+.hero a {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.featured {
+  padding-bottom: 1em;
+  background: var(--lightblue-gradient);
+  color: var(--dimmed);
+}
+
+.featured .title {
+  color: var(--dark);
+}
+
+.featured .subtitle {
+  color: var(--dark);
+}
+
+.about,
+.skills {
+  background: var(--purple);
+}
+
+.about .content p,
+.skills .content p {
+  color: var(--lightgrey);
+}
+
+.about .title,
+.skills .title {
+  color: var(--accent);
+}
+
+.portfolio {
+  padding-bottom: 1em;
+}
+
+.portfolio .content {
+  background: var(--hero-gradient);
+  color: #fff;
+}
+
+.blog,
+.faqs {
+  padding: 5px;
+  background: var(--lightgrey);
+}
+
+.blog .content p,
+.faqs .content p {
+  color: var(--dark);
+}
+
+.blog .title,
+.faqs .title {
+  color: var(--dark);
+}
+
+.blog .headline,
+.faqs .headline {
+  color: var(--dark);
+}
+
+.blog .subtitle,
+.faqs .subtitle {
+  color: var(--dark);
+}

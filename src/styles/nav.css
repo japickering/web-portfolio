@@ -1,0 +1,93 @@
+.navbar ul {
+  margin-top: 2%;
+}
+
+.navbar ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.navbar ul li a {
+  display: block;
+  text-transform: capitalize;
+}
+
+.sidebar {
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color: #fff;
+  z-index: 10;
+}
+
+.sidebar .btn-toggle {
+  display: block;
+  padding: 0;
+  margin-top: 20px;
+  margin-right: 25px;
+}
+
+.sidebar .btn-toggle span {
+  font-size: 24px;
+}
+
+.sidebar .overlay {
+  position: absolute;
+  width: 0px;
+  min-height: 100vh;
+  top: 70px;
+  right: 0px;
+  background: #111;
+  opacity: 0;
+  z-index: 10;
+}
+
+.sidebar .overlay.active {
+  width: 800px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.sidebar .slide-menu {
+  position: absolute;
+  top: 70px;
+  right: 0px;
+  padding: 2%;
+  background: #111;
+  min-height: 100vh;
+  width: 0px;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: 99;
+}
+
+.sidebar .slide-menu.active {
+  width: 200px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.sidebar .slide-menu li {
+  display: block;
+  background: inherit;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.sidebar .slide-menu li a {
+  display: block;
+  margin: 10px 15px;
+  padding: 10px;
+  text-transform: capitalize;
+}
+
+.sidebar .slide-menu li:hover, .sidebar .slide-menu li:focus, .sidebar .slide-menu li.active {
+  background: var(--primary);
+}
+
+.sidebar .slide-menu li:hover .nav-item, .sidebar .slide-menu li:focus .nav-item, .sidebar .slide-menu li.active .nav-item {
+  color: var(--dark);
+}

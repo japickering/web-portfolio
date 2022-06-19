@@ -1,0 +1,142 @@
+{
+	"title": "Front-end Web Developer",
+	"author": "James Pickering",
+	"headline": "Creating highly interactive, responsive, mobile friendly websites and applications",
+	"avatar": "/assets/avatar.jpg",
+	"contact": "Contact me on socials if you have any job opportunities you'd like to discuss, or any questions you might have.",
+	"jdsports": {
+		"title": "JD Sports",
+		"desc": "Desktop and mobile landing pages",
+		"body": "Desktop landing pages and mobile responsive design.",
+		"tech": ["Photoshop", "HTML5", "CSS", "jQuery"],
+		"slidesContainerId": "jd-slides",
+		"dotNavClass": "dot-jd",
+		"slides": [
+			{
+				"id": 0,
+				"img": "/assets/jdsports-ip.png",
+				"alt": "jd sports mens category page"
+			},
+			{
+				"id": 1,
+				"img": "/assets/jdsports-ip2.png",
+				"alt": "jd sports mens products"
+			}
+		]
+	},
+	"kidsloop": {
+		"title": "KidsLoop Coding Assignment",
+		"desc": "In October, KidsLoop briefed me to recreate a sign-in page design using a DOM rendering framework. The finished responsive design should scale across a range of screen resolutions and devices. Add a dark / light theme toggle and switch between two icons.",
+		"body": "Shown in the slider opposite are slides from the final demo, which included support for multi language translation and accessibility.",
+		"slidesContainerId": "kl-slides",
+		"dotNavClass": "dot-kl",
+		"slides": [
+			{
+				"id": 0,
+				"img": "/assets/kidsloop-macbook-pro.png",
+				"alt": "design on macbook pro"
+			},
+			{
+				"id": 1,
+				"img": "/assets/kidsloop-ip13.png",
+				"alt": "design on iphone 13 pro"
+			}
+		],
+		"tech": ["HTML5", "CSS", "React JS", "i18next", "REST"]
+	},
+	"qbots": {
+		"title": "qEnergy Dashboard",
+		"desc": "Energy saving dashboards for energy saving analytics",
+		"body": "I developed smart energy dashboards for SME and Enterprise customers offering insights and savings predictions based on energy usage data collected over day and monthly periods.",
+		"img": "/assets/QEnergy-Dashboard.png",
+		"tech": ["HTML5", "CSS", "JavaScript", "React JS", "Figma", "eCharts"]
+	},
+	"intel": {
+		"title": "SEC³URE Companion App by Intellicentrics",
+		"desc": "Refreshed responsive design",
+		"body": "Front-end development and responsive mobile design.",
+		"img": "/assets/ip6-secure.png",
+		"tech": [
+			"HTML5",
+			"CSS",
+			"JavaScript",
+			"TypeScript",
+			"React Native",
+			"Styled components"
+		]
+	},
+	"faqs": [
+		{
+			"q": "Are you looking for a new role?",
+			"a": "I'm open to new job opportunities."
+		},
+		{
+			"q": "Describe your ideal job role?",
+			"a": "The opportunity to work in a team on exciting greenfield projects like creating 3D interactive spaces or developing online learning platforms."
+		},
+		{
+			"q": "What are you looking for in your next job?",
+			"a": "A development role in a company that fully embraces remote working, and doesn't impose time tracking software on it's staff to keep tabs on their daily work routine. Access to emerging tech via training courses is also important to grow my worth and potential."
+		},
+		{
+			"q": "Do you prefer to work remotely or in the office?",
+			"a": "Fully remote or hybrid."
+		},
+		{
+			"q": "Would you consider cross training in Node JS or React Native?",
+			"a": "I'm open to learning new things if it leads to progression or as part of on the job training."
+		}
+	],
+	"skills": [
+		{
+			"id": 0,
+			"title": "HTML5",
+			"subtitle": "Hypertext Markup Language",
+			"img": "",
+			"alt": "",
+			"desc": "HTML5 is a markup language and related technologies used for structuring and presenting web content. Web browsers interprets the HTML5 tags and attributes and converts them into human readable web pages. I've used it together with CSS and JavaScript to develop content for e-commerce websites and web applications."
+		},
+		{
+			"title": "CSS",
+			"subtitle": "Cascading style sheets",
+			"img": "",
+			"alt": "",
+			"desc": "I use CSS to enable the separation of presentation and content, including layout, colours and fonts. CSS is a cornerstone technology of the web which is constantly evolving in scope and features, alongside HTML and JavaScript. "
+		},
+		{
+			"title": "SASS",
+			"subtitle": "Syntactically Awesome Stylesheets",
+			"img": "",
+			"alt": "",
+			"desc": "SASS is a syntax pre-processor for CSS. It has useful features that aren’t supported in regular CSS such as nesting, mixins, and modules that help you write clean and maintainable CSS code."
+		},
+		{
+			"title": "Javascript",
+			"subtitle": "Javascript programming",
+			"img": "",
+			"alt": "javascript logo",
+			"desc": "JavaScript usually abbreviated as JS, is a high level programming language that conforms to the ECMA Script specification.  It has dynamic typing, object-oriented features, and functions are first-class citizens. It has evolved from from humble beginnings in the 1990s into a hugely popular web development ecosystem that consists of Node, Node package manager and frameworks such as React, Angular and Vue to name just a few."
+		},
+		{
+			"title": "React JS",
+			"subtitle": "React JS Library",
+			"img": "",
+			"alt": "react logo",
+			"desc": "React usually abbreviated as React, is a free and open-source JavaScript library for building user interfaces with composable UI components. Its key selling point is its faster re-rendering of HTML document elements. It is maintained by Facebook and a community of developers and companies. I use React in the development of single-page applications or mobile web applications."
+		},
+		{
+			"title": "Node JS",
+			"subtitle": "Node.js",
+			"img": "",
+			"alt": "",
+			"desc": "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. As an asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications."
+		},
+		{
+			"title": "REST",
+			"subtitle": "Representational State Transfer",
+			"img": "",
+			"alt": "",
+			"desc": "REST or Representational State Transfer is a process for distributed network systems. REST APIs are typically used to make asynchronous requests to fetch data from servers and post data from a contact form or sign up form."
+		}
+	]
+}
