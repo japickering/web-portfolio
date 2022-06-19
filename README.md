@@ -2,11 +2,9 @@
 
 ## Web development Portfolio
 
-### Changelog
+Changelog:
 
 - Upgraded React base
 - Upgraded to React Router v6.
 - Removed deprecated Node-Sass
 - Upgraded to Dart Sass
-
-[View site](https://jpuidev.netlify.app/)
