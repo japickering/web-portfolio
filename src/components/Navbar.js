@@ -19,6 +19,7 @@ export default function Navbar() {
   }, []);
 
   const getMenuItems = (item) => {
+    const displayName = item.name === 'faq' ? 'FAQs' : item.name;
     return (
       <li>
         <Link
@@ -27,8 +28,8 @@ export default function Navbar() {
           onClick={() => {
             setActive(item.name);
           }}>
-          <i className={`fa fa-${item.name}`}></i>
-          {item.name}
+          <i className={`fa fa-${item.icon}`}></i>
+          {displayName}
         </Link>
       </li>
     );

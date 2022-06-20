@@ -1,96 +1,105 @@
 .navbar {
-	ul {
-		margin-top: 2%;
+  ul {
+    margin-top: 2%;
 
-		li {
-			display: inline-block;
-			margin-left: 20px;
+    li {
+      display: inline-block;
+      margin-left: 20px;
 
-			a {
-				display: block;
-				text-transform: capitalize;
-			}
-		}
-	}
+      a {
+        display: block;
+        padding-right: 0.5rem;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+
+.navbar ul li a:hover,
+.navbar ul li a:focus,
+.navbar ul li a:active {
+  padding-right: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--primary);
 }
 
 .sidebar {
-	display: block;
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	color: #fff;
-	z-index: 10;
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color: #fff;
+  z-index: 10;
 
-	.btn-toggle {
-		display: block;
-		padding: 0;
-		margin-top: 20px;
-		margin-right: 25px;
+  .btn-toggle {
+    display: block;
+    padding: 0;
+    margin-top: 20px;
+    margin-right: 25px;
 
-		span {
-			font-size: 24px;
-		}
-	}
+    span {
+      font-size: 24px;
+    }
+  }
 
-	.overlay {
-		position: absolute;
-		width: 0px;
-		min-height: 100vh;
-		top: 70px;
-		right: 0px;
-		background: #111;
-		opacity: 0;
-		z-index: 10;
-		// transition: all 0.5s;
+  .overlay {
+    position: absolute;
+    width: 0px;
+    min-height: 100vh;
+    top: 70px;
+    right: 0px;
+    background: #111;
+    opacity: 0;
+    z-index: 10;
+    // transition: all 0.5s;
 
-		&.active {
-			width: 800px;
-			opacity: 0.5;
-			cursor: pointer;
-		}
-	}
+    &.active {
+      width: 800px;
+      opacity: 0.5;
+      cursor: pointer;
+    }
+  }
 
-	.slide-menu {
-		position: absolute;
-		top: 70px;
-		right: 0px;
-		padding: 2%;
-		background: #111;
-		min-height: 100vh;
-		width: 0px;
-		opacity: 0;
-		pointer-events: none;
-		transition: all 0.5s;
-		z-index: 99;
+  .slide-menu {
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    padding: 2%;
+    background: #111;
+    min-height: 100vh;
+    width: 0px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s;
+    z-index: 99;
 
-		&.active {
-			width: 200px;
-			opacity: 1;
-			pointer-events: auto;
-		}
+    &.active {
+      width: 200px;
+      opacity: 1;
+      pointer-events: auto;
+    }
 
-		li {
-			display: block;
-			background: inherit;
-			transition: all 0.5s;
+    li {
+      display: block;
+      background: inherit;
+      transition: all 0.5s;
 
-			a {
-				display: block;
-				margin: 10px 15px;
-				padding: 10px;
-				text-transform: capitalize;
-			}
+      a {
+        display: block;
+        margin: 10px 15px;
+        padding: 10px;
+        text-transform: capitalize;
+      }
 
-			&:hover,
-			&:focus,
-			&.active {
-				background: var(--primary);
+      &:hover,
+      &:focus,
+      &.active {
+        background: var(--primary);
 
-				.nav-item {
-					color: var(--dark);
-				}
-			}
-		}
-	}
+        .nav-item {
+          color: var(--dark);
+        }
+      }
+    }
+  }
 }

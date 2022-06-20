@@ -84,10 +84,14 @@
   text-transform: capitalize;
 }
 
-.sidebar .slide-menu li:hover, .sidebar .slide-menu li:focus, .sidebar .slide-menu li.active {
+.sidebar .slide-menu li:hover,
+.sidebar .slide-menu li:focus,
+.sidebar .slide-menu li.active {
   background: var(--primary);
 }
 
-.sidebar .slide-menu li:hover .nav-item, .sidebar .slide-menu li:focus .nav-item, .sidebar .slide-menu li.active .nav-item {
+.sidebar .slide-menu li:hover .nav-item,
+.sidebar .slide-menu li:focus .nav-item,
+.sidebar .slide-menu li.active .nav-item {
   color: var(--dark);
 }

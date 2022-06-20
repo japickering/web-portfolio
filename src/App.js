@@ -18,7 +18,7 @@ import BuyMeCoffee from './components/BuyMeCoffee';
 import BlogPost from './components/BlogPost';
 
 export default function App() {
-  const { avatar, skills, contact, faqs } = db;
+  const { avatar, skills, contact, faq } = db;
   const posts = blog.posts.map((post) => {
     return post;
   });
@@ -37,7 +37,7 @@ export default function App() {
       <Routes>
         <Route path='/' element={<Home {...db} />} />
         <Route path='about' element={<About avatar={avatar} skills={skills} />} />
-        <Route path='faq' element={<Faqs faqs={faqs} />} />
+        <Route path='faq' element={<Faqs faq={faq} />} />
         <Route path='contact' element={<Contact contact={contact} />} />
         <Route path='blog' element={<Blog posts={posts} />} />
 
