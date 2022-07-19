@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { scrollUp } from '../libs';
+import { scrollUp } from '../libs/scroll';
 
 export default function SideMenu() {
   const [toggle, setToggle] = useState(false);

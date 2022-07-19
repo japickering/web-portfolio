@@ -10,7 +10,7 @@
     "body": "Desktop landing pages and mobile responsive design.",
     "tech": ["Photoshop", "HTML5", "CSS", "jQuery"],
     "slidesContainerId": "jd-slides",
-    "dotNavClass": "dot-jd",
+    "className": "dot-jd",
     "slides": [
       {
         "id": 0,
@@ -29,7 +29,7 @@
     "desc": "In October, KidsLoop briefed me to recreate a sign-in page design using a DOM rendering framework. The finished responsive design should scale across a range of screen resolutions and devices. Add a dark / light theme toggle and switch between two icons.",
     "body": "Shown in the slider opposite are slides from the final demo, which included support for multi language translation and accessibility.",
     "slidesContainerId": "kl-slides",
-    "dotNavClass": "dot-kl",
+    "className": "dot-kl",
     "slides": [
       {
         "id": 0,
