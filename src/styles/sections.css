@@ -1,27 +1,22 @@
 section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   width: 100%;
 }
-
 section .content {
-  margin: 1em;
+  margin: 1rem;
   border-radius: 0.3rem;
 }
-
 section .headline {
   color: var(--light);
 }
-
 section .subtitle {
   color: var(--primary);
 }
 
 .faqs,
 .contact {
-  min-height: 70vh;
+  min-height: 90vh;
 }
 
 .hero,
@@ -30,24 +25,20 @@ section .subtitle {
   background: var(--hero-gradient);
   color: var(--light);
 }
-
 .hero .title,
 .contact .title {
   color: var(--accent);
 }
-
 .hero li,
 .contact li {
-  line-height: 1.5em;
+  line-height: 1.5rem;
 }
-
 .hero li a,
 .contact li a {
   margin: 1em;
   color: var(--light);
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
-
 .hero li a:hover, .hero li a:focus,
 .contact li a:hover,
 .contact li a:focus {
@@ -58,16 +49,12 @@ section .subtitle {
 }
 
 .hero {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .hero .logo {
   width: 100px;
   height: 100px;
 }
-
 .hero a {
   margin-right: 10px;
   vertical-align: middle;
@@ -78,25 +65,21 @@ section .subtitle {
   background: var(--lightblue-gradient);
   color: var(--dimmed);
 }
-
 .featured .title {
-  color: var(--dark);
+  color: var(--black);
 }
-
 .featured .subtitle {
-  color: var(--dark);
+  color: var(--black);
 }
 
 .about,
 .skills {
   background: var(--purple);
 }
-
 .about .content p,
 .skills .content p {
   color: var(--lightgrey);
 }
-
 .about .title,
 .skills .title {
   color: var(--accent);
@@ -105,10 +88,9 @@ section .subtitle {
 .portfolio {
   padding-bottom: 1em;
 }
-
 .portfolio .content {
   background: var(--hero-gradient);
-  color: #fff;
+  color: var(--light);
 }
 
 .blog,
@@ -116,23 +98,19 @@ section .subtitle {
   padding: 5px;
   background: var(--lightgrey);
 }
-
 .blog .content p,
 .faqs .content p {
-  color: var(--dark);
+  color: var(--midgrey);
 }
-
 .blog .title,
 .faqs .title {
-  color: var(--dark);
+  color: var(--black);
 }
-
 .blog .headline,
 .faqs .headline {
-  color: var(--dark);
+  color: var(--black);
 }
-
 .blog .subtitle,
 .faqs .subtitle {
-  color: var(--dark);
+  color: var(--black);
 }

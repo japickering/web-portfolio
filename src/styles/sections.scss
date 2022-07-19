@@ -1,127 +1,126 @@
 section {
-	display: flex;
-	position: relative;
-	width: 100%;
+  display: flex;
+  position: relative;
+  width: 100%;
 
-	.content {
-		margin: 1em;
-		border-radius: 0.3rem;
-	}
+  .content {
+    margin: 1rem;
+    border-radius: 0.3rem;
+  }
 
-	.headline {
-		color: var(--light);
-	}
+  .headline {
+    color: var(--light);
+  }
 
-	.subtitle {
-		color: var(--primary);
-	}
+  .subtitle {
+    color: var(--primary);
+  }
 }
 
 .faqs,
 .contact {
-	min-height: 70vh;
+  min-height: 90vh;
 }
 
 .hero,
 .contact {
-	padding: 5px;
-	background: var(--hero-gradient);
-	color: var(--light);
+  padding: 5px;
+  background: var(--hero-gradient);
+  color: var(--light);
 
-	.title {
-		color: var(--accent);
-	}
+  .title {
+    color: var(--accent);
+  }
 
-	li {
-		line-height: 1.5em;
+  li {
+    line-height: 1.5rem;
 
-		a {
-			margin: 1em;
-			color: var(--light);
-			font-size: 1.2em;
+    a {
+      margin: 1em;
+      color: var(--light);
+      font-size: 1.2rem;
 
-			&:hover,
-			&:focus {
-				color: var(--accent);
-				opacity: 1;
-				animation: hoverfade 0.3s ease-in;
-			}
-		}
-	}
+      &:hover,
+      &:focus {
+        color: var(--accent);
+        opacity: 1;
+        animation: hoverfade 0.3s ease-in;
+      }
+    }
+  }
 }
 
 .hero {
-	justify-content: space-between;
+  justify-content: space-between;
 
-	.logo {
-		width: 100px;
-		height: 100px;
-	}
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
 
-	a {
-		margin-right: 10px;
-		vertical-align: middle;
-	}
+  a {
+    margin-right: 10px;
+    vertical-align: middle;
+  }
 }
 
 .featured {
-	padding-bottom: 1em;
-	// border-bottom: 2px solid whitesmoke;
-	background: var(--lightblue-gradient);
-	color: var(--dimmed);
+  padding-bottom: 1em;
+  background: var(--lightblue-gradient);
+  color: var(--dimmed);
 
-	.title {
-		color: var(--dark);
-	}
+  .title {
+    color: var(--black);
+  }
 
-	.subtitle {
-		color: var(--dark);
-	}
+  .subtitle {
+    color: var(--black);
+  }
 }
 
 .about,
 .skills {
-	background: var(--purple);
+  background: var(--purple);
 
-	.content {
-		p {
-			color: var(--lightgrey);
-		}
-	}
+  .content {
+    p {
+      color: var(--lightgrey);
+    }
+  }
 
-	.title {
-		color: var(--accent);
-	}
+  .title {
+    color: var(--accent);
+  }
 }
 
 .portfolio {
-	padding-bottom: 1em;
-	.content {
-		background: var(--hero-gradient);
-		color: #fff;
-	}
+  padding-bottom: 1em;
+  .content {
+    background: var(--hero-gradient);
+    color: var(--light);
+  }
 }
 
 .blog,
 .faqs {
-	padding: 5px;
-	background: var(--lightgrey);
+  padding: 5px;
+  background: var(--lightgrey);
 
-	.content {
-		p {
-			color: var(--dark);
-		}
-	}
+  .content {
+    p {
+      color: var(--midgrey);
+    }
+  }
 
-	.title {
-		color: var(--dark);
-	}
+  .title {
+    color: var(--black);
+  }
 
-	.headline {
-		color: var(--dark);
-	}
+  .headline {
+    color: var(--black);
+  }
 
-	.subtitle {
-		color: var(--dark);
-	}
+  .subtitle {
+    color: var(--black);
+  }
 }

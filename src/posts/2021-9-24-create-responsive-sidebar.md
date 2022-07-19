@@ -133,7 +133,7 @@ Define the sidebar as a floating menu and nested its child elements. The slide m
         background: var(--primary);
 
         .nav-item {
-          color: var(--dark);
+          color: var(--black);
         }
       }
     }

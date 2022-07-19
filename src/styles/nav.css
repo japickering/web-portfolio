@@ -1,97 +1,88 @@
 .navbar ul {
-  margin-top: 2%;
+  margin-top: 0.5rem;
 }
-
 .navbar ul li {
   display: inline-block;
-  margin-left: 20px;
+  margin-left: 2rem;
 }
-
 .navbar ul li a {
   display: block;
+  padding-right: 0.5rem;
   text-transform: capitalize;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a:focus,
+.navbar ul li a:active {
+  padding-right: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--primary);
 }
 
 .sidebar {
   display: block;
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 0;
+  right: 0;
   color: #fff;
   z-index: 10;
 }
-
 .sidebar .btn-toggle {
   display: block;
   padding: 0;
-  margin-top: 20px;
-  margin-right: 25px;
+  margin-top: 1rem;
+  margin-right: 1rem;
 }
-
 .sidebar .btn-toggle span {
-  font-size: 24px;
+  font-size: 1.8rem;
 }
-
 .sidebar .overlay {
   position: absolute;
-  width: 0px;
+  width: 0;
   min-height: 100vh;
   top: 70px;
-  right: 0px;
-  background: #111;
+  right: 0;
+  background: var(--darker);
   opacity: 0;
   z-index: 10;
 }
-
 .sidebar .overlay.active {
   width: 800px;
   opacity: 0.5;
   cursor: pointer;
 }
-
 .sidebar .slide-menu {
   position: absolute;
   top: 70px;
-  right: 0px;
-  padding: 2%;
-  background: #111;
+  right: 0;
+  padding: 1rem;
+  background: var(--darker);
   min-height: 100vh;
-  width: 0px;
+  width: 0;
   opacity: 0;
   pointer-events: none;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   z-index: 99;
 }
-
 .sidebar .slide-menu.active {
   width: 200px;
   opacity: 1;
   pointer-events: auto;
 }
-
 .sidebar .slide-menu li {
   display: block;
   background: inherit;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-
 .sidebar .slide-menu li a {
   display: block;
-  margin: 10px 15px;
-  padding: 10px;
+  margin: 1rem 15px;
+  padding: 1rem;
   text-transform: capitalize;
 }
-
-.sidebar .slide-menu li:hover,
-.sidebar .slide-menu li:focus,
-.sidebar .slide-menu li.active {
+.sidebar .slide-menu li:hover, .sidebar .slide-menu li:focus, .sidebar .slide-menu li.active {
   background: var(--primary);
 }
-
-.sidebar .slide-menu li:hover .nav-item,
-.sidebar .slide-menu li:focus .nav-item,
-.sidebar .slide-menu li.active .nav-item {
-  color: var(--dark);
+.sidebar .slide-menu li:hover .nav-item, .sidebar .slide-menu li:focus .nav-item, .sidebar .slide-menu li.active .nav-item {
+  color: var(--black);
 }
