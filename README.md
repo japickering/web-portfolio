@@ -4,7 +4,8 @@
 
 Changelog:
 
-- Upgraded React base
-- Upgraded to React Router v6.
-- Removed deprecated Node-Sass
+- Upgdaded Slider
 - Upgraded to Dart Sass
+- Removed deprecated Node-Sass
+- Upgraded to React Router v6.
+- Upgraded React base
