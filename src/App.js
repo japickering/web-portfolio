@@ -9,8 +9,6 @@ import About from './pages/About';
 import Faqs from './pages/Faqs';
 import Contact from './pages/Contact';
 import Blog from './pages/Blog';
-
-// components
 import Navbar from './components/Navbar';
 import SideMenu from './components/SideMenu';
 import Socials from './components/Socials';
@@ -22,7 +20,6 @@ export default function App() {
   const posts = blog.posts.map((post) => {
     return post;
   });
-
   posts.reverse();
 
   return (
@@ -64,9 +61,7 @@ export default function App() {
       </Routes>
       <section className='about' tabIndex='0'>
         <div className='scrolltop'>
-          <a href='#top'>
-            scroll up <i className='fa fa-arrow-up'></i>
-          </a>
+          <a href='#top'>scroll up</a>
         </div>
       </section>
       <footer className='split'>

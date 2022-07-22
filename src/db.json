@@ -30,18 +30,8 @@
     "body": "Shown in the slider opposite are slides from the final demo, which included support for multi language translation and accessibility.",
     "slidesContainerId": "kl-slides",
     "className": "dot-kl",
-    "slides": [
-      {
-        "id": 0,
-        "img": "/assets/kidsloop-macbook-pro.png",
-        "alt": "design on macbook pro"
-      },
-      {
-        "id": 1,
-        "img": "/assets/kidsloop-ip13.png",
-        "alt": "design on iphone 13 pro"
-      }
-    ],
+    "img": "/assets/kidsloop-macbook-pro.png",
+    "alt": "design on macbook pro",
     "tech": ["HTML5", "CSS", "React JS", "i18next", "REST"]
   },
   "qbots": {

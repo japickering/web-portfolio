@@ -1,6 +1,5 @@
 section {
   display: flex;
-  position: relative;
   width: 100%;
 }
 section .content {
@@ -61,7 +60,7 @@ section .subtitle {
 }
 
 .featured {
-  padding-bottom: 1em;
+  padding: 1em 0;
   background: var(--lightblue-gradient);
   color: var(--dimmed);
 }

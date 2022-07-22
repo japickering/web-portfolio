@@ -1,4 +1,6 @@
 .navbar {
+  display: block;
+
   ul {
     margin-top: 0.5rem;
 
@@ -9,7 +11,9 @@
       a {
         display: block;
         padding-right: 0.5rem;
+        padding-bottom: 0.5rem;
         text-transform: capitalize;
+        border-bottom: 1px solid transparent;
       }
     }
   }
@@ -18,8 +22,6 @@
 .navbar ul li a:hover,
 .navbar ul li a:focus,
 .navbar ul li a:active {
-  padding-right: 0.5rem;
-  padding-bottom: 0.5rem;
   border-bottom: 1px solid var(--primary);
 }
 

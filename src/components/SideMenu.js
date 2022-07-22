@@ -9,6 +9,7 @@ export default function SideMenu() {
   const openMenu = () => {
     const slidemenu = document.querySelector('.slide-menu');
     const overlay = document.querySelector('.overlay');
+
     slidemenu.classList.add('active');
     overlay.classList.add('active');
     setToggle(true);
@@ -18,6 +19,7 @@ export default function SideMenu() {
   const closeMenu = () => {
     const slidemenu = document.querySelector('.slide-menu');
     const overlay = document.querySelector('.overlay');
+
     slidemenu.classList.remove('active');
     overlay.classList.remove('active');
     setToggle(false);
@@ -31,6 +33,7 @@ export default function SideMenu() {
   useEffect(() => {
     closeMenu();
     const home = document.getElementById('home');
+
     home.addEventListener('click', function (e) {
       setActive('home');
       closeMenu();
@@ -62,7 +65,6 @@ export default function SideMenu() {
               closeMenu();
               setActive('home');
             }}>
-            <i className='fa fa-home'></i>
             home
           </Link>
         </li>
@@ -74,7 +76,6 @@ export default function SideMenu() {
               setActive('about');
               closeMenu();
             }}>
-            <i className='fa fa-file'></i>
             about
           </Link>
         </li>
@@ -86,7 +87,6 @@ export default function SideMenu() {
               setActive('blog');
               closeMenu();
             }}>
-            <i className='fa fa-edit'></i>
             blog
           </Link>
         </li>
@@ -98,7 +98,6 @@ export default function SideMenu() {
               setActive('faq');
               closeMenu();
             }}>
-            <i className='fa fa-question-circle'></i>
             FAQs
           </Link>
         </li>
@@ -110,13 +109,11 @@ export default function SideMenu() {
               setActive('contact');
               closeMenu();
             }}>
-            <i className='fa fa-comment'></i>
             contact
           </Link>
         </li>
         <li>
           <a href='https://github.com/japickering/' className='nav-item' rel='noreferrer' target='_blank'>
-            <i className='fa fa-github'></i>
             Github
           </a>
         </li>

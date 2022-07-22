@@ -13,7 +13,9 @@ export default function Home({ title, headline, kidsloop, qbots, jdsports }) {
       </section>
       <section className='featured fadein' tabIndex='0'>
         <PortfolioContent {...kidsloop} />
-        <Slider {...kidsloop} />
+        <div className='products'>
+          <img src={kidsloop.img} alt={kidsloop.alt} />
+        </div>
       </section>
       <section className='featured fadein' tabIndex='0'>
         <PortfolioContent {...qbots} />
