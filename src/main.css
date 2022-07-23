@@ -469,6 +469,7 @@ section .headline {
 }
 section .subtitle {
   color: var(--primary);
+  font-weight: 600;
 }
 
 .faqs,
@@ -518,7 +519,8 @@ section .subtitle {
 }
 
 .featured {
-  padding: 1em 0;
+  margin: 0;
+  padding: 1rem 0;
   background: var(--lightblue-gradient);
   color: var(--dimmed);
 }
@@ -924,7 +926,6 @@ section .subtitle {
 @media screen and (min-width: 920px) {
   .featured .content {
     width: 50%;
-    min-width: 600px;
   }
   .sidebar {
     display: none;
@@ -935,7 +936,7 @@ section .subtitle {
     flex-direction: column;
   }
   .featured .content {
-    width: 100%;
+    width: 95%;
   }
   .avatar {
     display: none;

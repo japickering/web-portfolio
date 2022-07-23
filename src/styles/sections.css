@@ -60,7 +60,8 @@ section .subtitle {
 }
 
 .featured {
-  padding: 1em 0;
+  margin: 0;
+  padding: 1rem 0;
   background: var(--lightblue-gradient);
   color: var(--dimmed);
 }

@@ -42,11 +42,20 @@
     "tech": ["HTML5", "CSS", "JavaScript", "React JS", "Figma", "eCharts"]
   },
   "intel": {
-    "title": "SEC³URE Companion App by Intellicentrics",
+    "title": "SEC³URE Companion App for Intellicentrics",
     "desc": "Refreshed responsive design",
     "body": "Front-end development and responsive mobile design.",
     "img": "/assets/ip6-secure.png",
+    "alt": "design on iphone",
     "tech": ["HTML5", "CSS", "JavaScript", "TypeScript", "React Native", "Styled components"]
+  },
+  "wrenkitchens": {
+    "title": "Wren Kitchens Planner 2D",
+    "desc": "Bespoke software development",
+    "body": "In 2022 I worked on Switch and Save - a price comparison feature within Planner 2D which the Kitchen designer walks the customer through a summary of kitchen appliances they picked in previous screens, compared with cheaper alternatives. The high quality 3D render image shown here is updated after a user confirms an appliance selection in Switch and Save and repopulates in the design choices screen.",
+    "img": "/assets/planner-macbook.png",
+    "alt": "kitchen planner 3d render",
+    "tech": ["CSS", "JavaScript", "TypeScript", "React"]
   },
   "faq": [
     {
