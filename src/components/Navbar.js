@@ -21,14 +21,13 @@ export default function Navbar() {
   const getMenuItems = (item) => {
     const displayName = item.name === 'faq' ? 'FAQs' : item.name;
     return (
-      <li>
+      <li key={item.name}>
         <Link
           to={item.name}
           className={active === item.name ? 'nav-item active' : 'nav-item'}
           onClick={() => {
             setActive(item.name);
           }}>
-          <i className={`fa fa-${item.icon}`}></i>
           {displayName}
         </Link>
       </li>

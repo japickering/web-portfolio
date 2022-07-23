@@ -1,13 +1,17 @@
-function setButtonInitialState() {
+function initState() {
   document.querySelector('.prev').classList.add('hidden');
   document.querySelector('.next').classList.remove('hidden');
+}
+
+function setPrev() {
+  document.querySelector('.prev').classList.remove('hidden');
+  document.querySelector('.next').classList.add('hidden');
 }
 
 export function updateSlider(id, className) {
   const buttons = document.getElementsByClassName(className);
 
   for (const btn of buttons) {
-    console.log(btn);
     btn.classList.remove('active');
   }
 
@@ -24,13 +28,12 @@ export function slideButtonClick(e, id, slidesContainerId, className) {
 
   if (id === 0) {
     slides.classList.add(slidesContainerId + 0);
-    setButtonInitialState();
+    initState();
   } else if (id === 1) {
     slides.classList.add(slidesContainerId + 1);
-    document.querySelector('.prev').classList.remove('hidden');
-    document.querySelector('.next').classList.add('hidden');
+    setPrev();
   } else {
     slides.classList.add(slidesContainerId + 0);
-    setButtonInitialState();
+    initState();
   }
 }
