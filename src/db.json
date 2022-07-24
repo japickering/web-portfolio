@@ -4,11 +4,19 @@
   "headline": "Creating highly interactive, responsive, mobile friendly websites and applications",
   "avatar": "/assets/avatar.jpg",
   "contact": "Contact me on socials if you have any job opportunities you'd like to discuss, or any questions you might have.",
+  "intel": {
+    "title": "SEC³URE Companion App for Intellicentrics",
+    "desc": "Refreshed responsive design",
+    "body": "Front-end development and responsive mobile design.",
+    "img": "/assets/ip6-secure.png",
+    "alt": "design on iphone",
+    "techstack": ["HTML5", "CSS", "JavaScript", "TypeScript", "React Native"]
+  },
   "jdsports": {
     "title": "JD Sports",
     "desc": "Desktop and mobile landing pages",
     "body": "Desktop landing pages and mobile responsive design.",
-    "tech": ["Photoshop", "HTML5", "CSS", "jQuery"],
+    "techstack": ["Photoshop", "HTML5", "CSS", "jQuery"],
     "slidesContainerId": "jd-slides",
     "className": "dot-jd",
     "slides": [
@@ -26,36 +34,28 @@
   },
   "kidsloop": {
     "title": "KidsLoop Coding Assignment",
-    "desc": "In October, KidsLoop briefed me to recreate a sign-in page design using a DOM rendering framework. The finished responsive design should scale across a range of screen resolutions and devices. Add a dark / light theme toggle and switch between two icons.",
-    "body": "Shown in the slider opposite are slides from the final demo, which included support for multi language translation and accessibility.",
+    "desc": "In October 2021, KidsLoop briefed me to recreate a sign-in page design using a DOM rendering framework.",
+    "body": " The finished responsive design should scale across a range of screen resolutions and devices. Add a dark / light theme toggle and switch between two icons. Shown in the slider opposite are slides from the final demo, which included support for multi language translation and accessibility.",
     "slidesContainerId": "kl-slides",
     "className": "dot-kl",
     "img": "/assets/kidsloop-macbook-pro.png",
     "alt": "design on macbook pro",
-    "tech": ["HTML5", "CSS", "React JS", "i18next", "REST"]
+    "techstack": ["HTML5", "CSS", "React JS", "i18next", "REST"]
   },
   "qbots": {
     "title": "qEnergy Dashboard",
-    "desc": "Energy saving dashboards for energy saving analytics",
+    "desc": "Smart energy dashboards for energy saving analytics",
     "body": "I developed smart energy dashboards for SME and Enterprise customers offering insights and savings predictions based on energy usage data collected over day and monthly periods.",
     "img": "/assets/QEnergy-Dashboard.png",
-    "tech": ["HTML5", "CSS", "JavaScript", "React JS", "Figma", "eCharts"]
-  },
-  "intel": {
-    "title": "SEC³URE Companion App for Intellicentrics",
-    "desc": "Refreshed responsive design",
-    "body": "Front-end development and responsive mobile design.",
-    "img": "/assets/ip6-secure.png",
-    "alt": "design on iphone",
-    "tech": ["HTML5", "CSS", "JavaScript", "TypeScript", "React Native", "Styled components"]
+    "techstack": ["HTML5", "CSS", "JavaScript", "React JS", "Figma", "eCharts"]
   },
   "wrenkitchens": {
     "title": "Wren Kitchens Planner 2D",
     "desc": "Bespoke software development",
-    "body": "In 2022 I worked on Switch and Save - a price comparison feature within Planner 2D which the Kitchen designer walks the customer through a summary of kitchen appliances they picked in previous screens, compared with cheaper alternatives. The high quality 3D render image shown here is updated after a user confirms an appliance selection in Switch and Save and repopulates in the design choices screen.",
+    "body": "In 2022 I worked on Switch and Save, a price comparison feature in Planner 2D which the Kitchen designer walks the customer through a summary of kitchen appliances they picked, compared with cheaper alternatives. The high quality 3D render image shown here is updated after a user confirms an appliance selection in Switch and Save and repopulates in the design choices screen.",
     "img": "/assets/planner-macbook.png",
     "alt": "kitchen planner 3d render",
-    "tech": ["CSS", "JavaScript", "TypeScript", "React"]
+    "techstack": ["CSS", "JavaScript", "TypeScript", "React JS"]
   },
   "faq": [
     {
@@ -68,7 +68,7 @@
     },
     {
       "q": "What are you looking for in your next job?",
-      "a": "A development role in a company that fully embraces remote working and flexi time. Access to emerging tech via training courses is also important to grow my worth and potential."
+      "a": "A development role in a company that fully embraces remote working and flexi time. Access to emerging techstack via training courses is also important to grow my worth and potential."
     },
     {
       "q": "Do you prefer to work remotely or in the office?",

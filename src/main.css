@@ -160,13 +160,14 @@ button,
   border: 1px solid var(--lightgrey);
 }
 
+.tabs {
+  display: flex;
+}
 .tabs li {
-  display: inline-block;
   margin: 4px;
   border: 1px solid transparent;
 }
 .tabs li .btn-tab {
-  display: block;
   background: transparent;
   border: 1px solid var(--midgrey);
   border-radius: 12px;
@@ -176,6 +177,18 @@ button,
 .tabs li .btn-tab:hover, .tabs li .btn-tab:focus, .tabs li .btn-tab.active {
   border: 1px solid var(--primary);
   color: var(--primary);
+}
+.tabs li .tech-tab {
+  background: transparent;
+  border: 1px solid var(--midgrey);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  color: var(--darker);
+}
+.tabs li .tech-tab:hover, .tabs li .tech-tab:focus {
+  border: 1px solid var(--darker);
+  background: var(--midgrey);
+  color: var(--light);
 }
 
 .container {
@@ -469,7 +482,6 @@ section .headline {
 }
 section .subtitle {
   color: var(--primary);
-  font-weight: 600;
 }
 
 .faqs,

@@ -166,13 +166,13 @@ button,
 }
 
 .tabs {
+  display: flex;
+
   li {
-    display: inline-block;
     margin: 4px;
     border: 1px solid transparent;
 
     .btn-tab {
-      display: block;
       background: transparent;
       border: 1px solid var(--midgrey);
       border-radius: 12px;
@@ -184,6 +184,21 @@ button,
       &.active {
         border: 1px solid var(--primary);
         color: var(--primary);
+      }
+    }
+
+    .tech-tab {
+      background: transparent;
+      border: 1px solid var(--midgrey);
+      border-radius: 0.5rem;
+      padding: 0.5rem;
+      color: var(--darker);
+
+      &:hover,
+      &:focus {
+        border: 1px solid var(--darker);
+        background: var(--midgrey);
+        color: var(--light);
       }
     }
   }
