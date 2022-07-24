@@ -16,7 +16,7 @@ import BuyMeCoffee from './components/BuyMeCoffee';
 import BlogPost from './components/BlogPost';
 
 export default function App() {
-  const { avatar, skills, contact, faq } = db;
+  const { about, author, avatar, skills, contact, faq, socials } = db;
   const posts = blog.posts.map((post) => {
     return post;
   });
@@ -33,7 +33,7 @@ export default function App() {
       <SideMenu />
       <Routes>
         <Route path='/' element={<Home {...db} />} />
-        <Route path='about' element={<About avatar={avatar} skills={skills} />} />
+        <Route path='about' element={<About about={about} author={author} avatar={avatar} skills={skills} />} />
         <Route path='faq' element={<Faqs faq={faq} />} />
         <Route path='contact' element={<Contact contact={contact} />} />
         <Route path='blog' element={<Blog posts={posts} />} />
@@ -59,21 +59,19 @@ export default function App() {
           );
         })}
       </Routes>
-      <section className='about' tabIndex='0'>
-        <div className='scrolltop'>
-          <a href='#top'>scroll up</a>
-        </div>
-      </section>
       <footer className='split'>
         <div>
           <h4>Support the channel</h4>
           <BuyMeCoffee />
         </div>
         <div>
-          <h4>Connect</h4>
-          <Socials />
+          <h4>Connect on social media</h4>
+          <Socials socials={socials} />
         </div>
       </footer>
+      <div className='circle-top'>
+        <a href='#top'>Back to top</a>
+      </div>
     </div>
   );
 }

@@ -1,9 +1,27 @@
 {
-  "title": "Front-end Web Developer",
-  "author": "James Pickering",
+  "title": "Front-end Software Developer",
+  "author": "James Pickering @jpuidev",
   "headline": "Creating highly interactive, responsive, mobile friendly websites and applications",
-  "avatar": "/assets/avatar.jpg",
+  "about": "I am a Front-end Software Developer living in Manchester, England. I've built websites and interactive components for the fashion, training and digital marketing industries for the past 12 years. In my spare time I enjoy travel photography, discovering new bands and going to live music gigs.",
+  "avatar": "/assets/myphoto.jpg",
   "contact": "Contact me on socials if you have any job opportunities you'd like to discuss, or any questions you might have.",
+  "socials": [
+    {
+      "name": "Github",
+      "icon": "fa fa-github",
+      "url": "https://github.com/japickering/"
+    },
+    {
+      "name": "Instagram",
+      "icon": "fa fa-instagram",
+      "url": "https://instagram.com/jpuidev"
+    },
+    {
+      "name": "Twitter",
+      "icon": "fa fa-twitter",
+      "url": "https://twitter.com/jpuidev"
+    }
+  ],
   "intel": {
     "title": "SEC³URE Companion App for Intellicentrics",
     "desc": "Refreshed responsive design",
@@ -40,18 +58,18 @@
     "className": "dot-kl",
     "img": "/assets/kidsloop-macbook-pro.png",
     "alt": "design on macbook pro",
-    "techstack": ["HTML5", "CSS", "React JS", "i18next", "REST"]
+    "techstack": ["HTML5", "CSS", "React JS", "REST APIs"]
   },
   "qbots": {
     "title": "qEnergy Dashboard",
     "desc": "Smart energy dashboards for energy saving analytics",
     "body": "I developed smart energy dashboards for SME and Enterprise customers offering insights and savings predictions based on energy usage data collected over day and monthly periods.",
     "img": "/assets/QEnergy-Dashboard.png",
-    "techstack": ["HTML5", "CSS", "JavaScript", "React JS", "Figma", "eCharts"]
+    "techstack": ["HTML5", "CSS", "JavaScript", "React JS", "eCharts"]
   },
   "wrenkitchens": {
     "title": "Wren Kitchens Planner 2D",
-    "desc": "Bespoke software development",
+    "desc": "Bespoke software development for Switch and Save",
     "body": "In 2022 I worked on Switch and Save, a price comparison feature in Planner 2D which the Kitchen designer walks the customer through a summary of kitchen appliances they picked, compared with cheaper alternatives. The high quality 3D render image shown here is updated after a user confirms an appliance selection in Switch and Save and repopulates in the design choices screen.",
     "img": "/assets/planner-macbook.png",
     "alt": "kitchen planner 3d render",
@@ -124,7 +142,7 @@
       "desc": "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. As an asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications."
     },
     {
-      "title": "REST",
+      "title": "REST APIs",
       "subtitle": "Representational State Transfer",
       "img": "",
       "alt": "",

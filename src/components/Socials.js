@@ -1,40 +1,17 @@
-import React from "react";
+import React from 'react';
 
-export default function Socials() {
-	const menu = [
-		{
-			name: "Github",
-			icon: "fa fa-github",
-			url: "https://github.com/japickering/",
-		},
-		{
-			name: "Instagram",
-			icon: "fa fa-instagram",
-			url: "https://instagram.com/jpuidev",
-		},
-		{
-			name: "Twitter",
-			icon: "fa fa-twitter",
-			url: "https://twitter.com/jpuidev",
-		},
-	];
-
-	return (
-		<ul className="socials" aria-label="menu">
-			{menu.map((item, index) => {
-				return (
-					<li key={index}>
-						<a
-							href={item.url}
-							className="social-link"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							<i className={item.icon}></i>&nbsp;&nbsp;{item.name}
-						</a>
-					</li>
-				);
-			})}
-		</ul>
-	);
+export default function Socials({ socials }) {
+  return (
+    <ul className='socials' aria-label='menu'>
+      {socials.map((item) => {
+        return (
+          <li key={item.name}>
+            <a href={item.url} target='_blank' rel='noopener noreferrer'>
+              {item.name}
+            </a>
+          </li>
+        );
+      })}
+    </ul>
+  );
 }

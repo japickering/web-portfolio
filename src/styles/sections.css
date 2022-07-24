@@ -74,15 +74,15 @@ section .subtitle {
 
 .about,
 .skills {
-  background: var(--purple);
+  background: var(--lightgrey);
 }
 .about .content p,
 .skills .content p {
-  color: var(--lightgrey);
+  color: var(--black);
 }
 .about .title,
 .skills .title {
-  color: var(--accent);
+  color: var(--a);
 }
 
 .portfolio {

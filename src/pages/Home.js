@@ -1,7 +1,7 @@
 import React from 'react';
 import PortfolioContent from '../components/PortfolioContent';
 
-export default function Home({ title, headline, kidsloop, qbots, jdsports, wrenkitchens }) {
+export default function Home({ title, headline, skills, kidsloop, qbots, jdsports, wrenkitchens }) {
   return (
     <main>
       <section className='hero' tabIndex='0'>
@@ -10,9 +10,9 @@ export default function Home({ title, headline, kidsloop, qbots, jdsports, wrenk
           <h2 className='headline'>{headline}</h2>
         </div>
       </section>
-      <section className='featured fadein' tabIndex='0'>
+      <section className='featured' tabIndex='0'>
         <PortfolioContent {...wrenkitchens} />
-        <div className='products'>
+        <div className='products fadein'>
           <img src={wrenkitchens.img} alt={wrenkitchens.alt} />
         </div>
       </section>

@@ -8,7 +8,7 @@ export default function PortfolioContent({ title, desc, body, techstack }) {
       <h3>{desc}</h3>
       <p>{body}</p>
       <p>
-        <code>Tech stack:</code>
+        <small>Tech stack:</small>
       </p>
       <ul className='tabs'>
         {techstack.map((tech) => {
@@ -16,7 +16,7 @@ export default function PortfolioContent({ title, desc, body, techstack }) {
           return (
             <li key={tech}>
               <Link to='/about' className='tech-tab' title={tip}>
-                <code>{tech}</code>
+                <small>{tech}</small>
               </Link>
             </li>
           );

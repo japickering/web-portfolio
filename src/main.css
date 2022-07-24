@@ -160,35 +160,26 @@ button,
   border: 1px solid var(--lightgrey);
 }
 
-.tabs {
-  display: flex;
-}
 .tabs li {
+  display: inline-block;
   margin: 4px;
   border: 1px solid transparent;
 }
-.tabs li .btn-tab {
-  background: transparent;
-  border: 1px solid var(--midgrey);
-  border-radius: 12px;
-  padding: 10px;
-  color: #ccc;
-}
-.tabs li .btn-tab:hover, .tabs li .btn-tab:focus, .tabs li .btn-tab.active {
-  border: 1px solid var(--primary);
-  color: var(--primary);
-}
+.tabs li .btn-tab,
 .tabs li .tech-tab {
+  padding: 0.5rem;
   background: transparent;
+  color: var(--darker);
   border: 1px solid var(--midgrey);
   border-radius: 0.5rem;
-  padding: 0.5rem;
-  color: var(--darker);
 }
-.tabs li .tech-tab:hover, .tabs li .tech-tab:focus {
+.tabs li .btn-tab:hover, .tabs li .btn-tab:focus,
+.tabs li .tech-tab:hover,
+.tabs li .tech-tab:focus {
   border: 1px solid var(--darker);
   background: var(--midgrey);
   color: var(--light);
+  opacity: 1;
 }
 
 .container {
@@ -199,12 +190,6 @@ button,
   max-width: 2400px;
   min-height: 100vh;
   overflow: hidden;
-}
-
-.scrolltop {
-  width: 100%;
-  margin: 10px;
-  text-align: right;
 }
 
 header,
@@ -241,10 +226,41 @@ main {
   align-items: center;
 }
 
+.circle-top {
+  position: fixed;
+  display: block;
+  z-index: 2;
+  bottom: 2%;
+  right: 10px;
+  width: 80px;
+  height: 80px;
+  background: var(--midgrey);
+  border: 1px solid var(--primary);
+  border-radius: 50%;
+  text-align: center;
+  opacity: 0.6;
+  transition: all 0.5s ease;
+}
+.circle-top:hover, .circle-top:focus {
+  opacity: 1;
+  width: 120px;
+  height: 120px;
+}
+.circle-top a {
+  display: block;
+  margin-top: 40%;
+  width: 100%;
+  height: 100%;
+  color: var(--light);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
 .avatar {
   max-width: 200px;
   margin-right: 10px;
-  border-radius: 0.25rem;
+  border: 1px solid var(--black);
+  border-radius: 50%;
 }
 
 .featured-image {
@@ -267,8 +283,9 @@ main {
 
 .socials li {
   display: block;
+  margin: 10px 0;
 }
-.socials .social-link {
+.socials li a {
   display: block;
   font-size: 1.2em;
 }
@@ -545,15 +562,15 @@ section .subtitle {
 
 .about,
 .skills {
-  background: var(--purple);
+  background: var(--lightgrey);
 }
 .about .content p,
 .skills .content p {
-  color: var(--lightgrey);
+  color: var(--black);
 }
 .about .title,
 .skills .title {
-  color: var(--accent);
+  color: var(--a);
 }
 
 .portfolio {
