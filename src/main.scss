@@ -98,10 +98,6 @@ pre {
   background: var(--highlight);
 }
 
-.fa {
-  margin-right: 10px;
-}
-
 img {
   border: 0;
   max-width: 100%;
@@ -111,6 +107,20 @@ img {
 img.thumb,
 img.preview {
   display: block;
+}
+
+caption {
+  position: absolute;
+  display: block;
+  width: 100%;
+  bottom: 2rem;
+  color: var(--light);
+  font-size: 1rem;
+  text-shadow: 3px 3px 3px var(--darker);
+}
+
+.fa {
+  margin-right: 10px;
 }
 
 ul {
@@ -252,8 +262,6 @@ main {
   &:hover,
   &:focus {
     opacity: 1;
-    width: 120px;
-    height: 120px;
   }
 
   a {

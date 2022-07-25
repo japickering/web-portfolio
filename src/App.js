@@ -70,7 +70,7 @@ export default function App() {
         </div>
       </footer>
       <div className='circle-top'>
-        <a href='#top'>Back to top</a>
+        <a href='#top'>^ Scroll</a>
       </div>
     </div>
   );

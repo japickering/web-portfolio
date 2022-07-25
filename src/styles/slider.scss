@@ -1,87 +1,63 @@
 .slider-wrapper {
-  display: block;
-  position: relative;
-  height: 480px;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
-  border-radius: 0.3rem;
 
-  .next,
-  .prev {
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 85%;
-    width: 15%;
-    height: 100%;
-    border: 1px solid transparent;
-    color: var(--success);
-    font-size: 25px;
-    z-index: 2;
-    cursor: pointer;
-    opacity: 1;
-    transition: all 0.3s;
-
-    &:hover,
-    &:focus {
-      font-size: 30px;
-      opacity: 1;
-    }
-  }
-
-  .prev {
-    left: 0%;
-    width: 10%;
-  }
-
-  .container-slides {
-    display: block;
+  .slide {
     position: relative;
-    width: 1700px;
+    max-width: 720px;
 
-    li {
-      display: inline-block;
-      vertical-align: top;
-    }
-  }
-
-  #kl-slides {
-    padding-top: 5%;
     img {
-      width: 80%;
+      border: 1px solid var(--black);
+      border-radius: 2%;
+      text-align: center;
+    }
+
+    caption {
+      font-size: 1.4rem;
+      text-shadow: 3px 3px 3px var(--darker);
     }
   }
 
-  .dotnav {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    padding: 4px;
+  .menu {
+    width: 100%;
+    background-color: transparent;
     text-align: left;
-    border-radius: 10%;
 
     li {
+      position: relative;
       display: inline-block;
+      margin-right: 4px;
 
-      .dot-jd,
-      .dot-kl {
-        width: 10px;
-        height: 10px;
-        margin: 5px;
-        padding: 5px;
-        border: 1px solid;
-        border-radius: 50%;
-        background: var(--light);
-        color: var(--black);
+      a {
+        height: 100%;
+        background: transparent;
+        color: var(--dark);
         text-align: center;
-        transition: all 0.5s ease;
 
-        &:hover,
-        &:focus,
-        &:active,
+        img {
+          max-width: 360px;
+          border: 2px solid var(--black);
+          border-radius: 4%;
+          opacity: 0.7;
+          transition: all 0.5s;
+
+          &:hover,
+          &:focus {
+            opacity: 1;
+          }
+        }
+
+        caption {
+          bottom: 1rem;
+          font-size: 1.2rem;
+        }
+
         &.active {
-          background: var(--midgrey);
-          border: 1px solid var(--black);
-          padding: 10px;
+          img {
+            border: 2px solid var(--primary);
+            opacity: 1;
+          }
         }
       }
     }

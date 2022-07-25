@@ -1,7 +1,8 @@
 import React from 'react';
 import PortfolioContent from '../components/PortfolioContent';
+import Slider from '../components/Slider';
 
-export default function Home({ title, headline, skills, kidsloop, qbots, jdsports, wrenkitchens }) {
+export default function Home({ title, headline, kidsloop, qbots, jdsports, wrenkitchens }) {
   return (
     <main>
       <section className='hero' tabIndex='0'>
@@ -12,9 +13,7 @@ export default function Home({ title, headline, skills, kidsloop, qbots, jdsport
       </section>
       <section className='featured' tabIndex='0'>
         <PortfolioContent {...wrenkitchens} />
-        <div className='products fadein'>
-          <img src={wrenkitchens.img} alt={wrenkitchens.alt} />
-        </div>
+        <Slider previews={wrenkitchens.previews} slides={wrenkitchens.slides} />
       </section>
       <section className='featured fadein' tabIndex='0'>
         <PortfolioContent {...kidsloop} />
