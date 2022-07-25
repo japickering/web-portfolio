@@ -1,31 +1,32 @@
-import React, { useEffect } from 'react';
-import { slideButtonClick, updateSlider } from '../libs/slider';
+import React, { useState } from 'react';
 
-export default function Slider({ slidesContainerId, className, slides }) {
-  useEffect(() => {
-    updateSlider(0, className);
-  }, [className]);
+export default function Slider({ previews, slides }) {
+  const [currentSlide, currentSlideSet] = useState(0);
+
+  const btnClick = (e, id) => {
+    e.preventDefault();
+    currentSlideSet(id);
+  };
 
   return (
-    <div className='slider-wrapper'>
-      <ul id={slidesContainerId} className='container-slides'>
-        {slides.map((slide) => {
+    <div className='slider-wrapper fadein'>
+      <div className='slide'>
+        <figure>
+          <img src={slides[currentSlide].img} alt={slides[currentSlide].alt} />
+          <caption>{slides[currentSlide].alt}</caption>
+        </figure>
+      </div>
+      <ul className='menu'>
+        {previews.map((preview) => {
           return (
-            <li key={slide.id}>
-              <img className='slide' src={slide.img} alt={slide.alt} title={slide.alt} />
-            </li>
-          );
-        })}
-      </ul>
-      <ul className='dotnav'>
-        {slides.map((slide) => {
-          return (
-            <li key={slide.id}>
-              <button
-                className={className}
-                aria-label={'slide' + slide.id}
-                onClick={(e) => slideButtonClick(e, slide.id, slidesContainerId, className)}
-              />
+            <li key={preview.id}>
+              <a
+                href='#top'
+                className={currentSlide === preview.id ? 'active' : ''}
+                onClick={(e) => btnClick(e, preview.id)}>
+                <img src={preview.img} alt={preview.alt} />
+                <caption>{preview.alt}</caption>
+              </a>
             </li>
           );
         })}

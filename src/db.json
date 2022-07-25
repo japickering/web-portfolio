@@ -70,9 +70,31 @@
   "wrenkitchens": {
     "title": "Wren Kitchens Planner 2D",
     "desc": "Bespoke software development for Switch and Save",
-    "body": "In 2022 I worked on Switch and Save, a price comparison feature in Planner 2D which the Kitchen designer walks the customer through a summary of kitchen appliances they picked, compared with cheaper alternatives. The high quality 3D render image shown here is updated after a user confirms an appliance selection in Switch and Save and repopulates in the design choices screen.",
-    "img": "/assets/planner-macbook.png",
-    "alt": "kitchen planner 3d render",
+    "body": "In 2022 I worked on Switch and Save, a price comparison tool for Planner 2D used by the Kitchen Designers in showrooms to walk the customer through a series of design choices. Based on the appliances they picked they will be shown a set of cheaper base units or appliances. For example the 3D render shown opposite is refreshed behind the scenes after the user confirms a selected appliance in Switch and Save, which is then updated in design choices. Finally when the customer views the basket page they will be able to see a summary of the material and unit costs.",
+    "slides": [
+      {
+        "id": 0,
+        "img": "/wrenders/milano-range.jpg",
+        "alt": "planner design choices"
+      },
+      {
+        "id": 1,
+        "img": "/wrenders/vogue-range.jpg",
+        "alt": "planner design choices"
+      }
+    ],
+    "previews": [
+      {
+        "id": 0,
+        "img": "/wrenders/milano-range.jpg",
+        "alt": "milano range"
+      },
+      {
+        "id": 1,
+        "img": "/wrenders/vogue-range.jpg",
+        "alt": "vogue range"
+      }
+    ],
     "techstack": ["CSS", "JavaScript", "TypeScript", "React JS"]
   },
   "faq": [
