@@ -622,8 +622,6 @@ section .subtitle {
 .slider-wrapper {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
-  background-color: #567;
   overflow: hidden;
 }
 .slider-wrapper .slide {

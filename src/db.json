@@ -12,11 +12,6 @@
       "url": "https://github.com/japickering/"
     },
     {
-      "name": "Instagram",
-      "icon": "fa fa-instagram",
-      "url": "https://instagram.com/jpuidev"
-    },
-    {
       "name": "Twitter",
       "icon": "fa fa-twitter",
       "url": "https://twitter.com/jpuidev"
@@ -99,24 +94,24 @@
   },
   "faq": [
     {
-      "q": "Are you looking for a new role?",
-      "a": "I'm open to new job opportunities."
+      "q": "Are you currently looking for a new role?",
+      "a": "I'm open to new job roles."
     },
     {
       "q": "Describe your ideal job role?",
-      "a": "The opportunity to work in a team on exciting greenfield projects like creating 3D interactive spaces or developing online learning platforms."
+      "a": "The opportunity to work in a team on greenfield projects like creating 3D interactive spaces or developing online learning platforms."
     },
     {
       "q": "What are you looking for in your next job?",
-      "a": "A development role in a company that fully embraces remote working and flexi time. Access to emerging techstack via training courses is also important to grow my worth and potential."
+      "a": "A software development role with remote working. Access to new and emerging tech stacks via training courses is also important to grow my worth and potential."
     },
     {
       "q": "Do you prefer to work remotely or in the office?",
-      "a": "Fully remote or hybrid."
+      "a": "Fully remote preferred, but I'm open to hybrid working if the commute is minimal."
     },
     {
-      "q": "Would you consider cross training in Node JS or React Native?",
-      "a": "I'm open to learning new things if it leads to progression or as part of on the job training."
+      "q": "Would you consider cross training in other languages such as Node JS or React Native?",
+      "a": "I'm open to learning new things if it leads to progression as part of on the job training."
     }
   ],
   "skills": [
