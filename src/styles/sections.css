@@ -34,7 +34,6 @@ section .subtitle {
 }
 .hero li a,
 .contact li a {
-  margin: 1em;
   color: var(--light);
   font-size: 1.2rem;
 }

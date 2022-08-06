@@ -35,7 +35,7 @@ export default function App() {
         <Route path='/' element={<Home {...db} />} />
         <Route path='about' element={<About about={about} author={author} avatar={avatar} skills={skills} />} />
         <Route path='faq' element={<Faqs faq={faq} />} />
-        <Route path='contact' element={<Contact contact={contact} />} />
+        <Route path='contact' element={<Contact heading={contact} socials={socials} />} />
         <Route path='blog' element={<Blog posts={posts} />} />
 
         {posts.map((post, index) => {
