@@ -10,10 +10,11 @@
       margin-left: 1.5rem;
 
       a {
-        //   display: block;
         padding-right: 0.5rem;
         padding-bottom: 0.5rem;
         text-transform: capitalize;
+        border: 0;
+        outline: 0;
         border-bottom: 1px solid transparent;
       }
 
@@ -94,6 +95,8 @@
         display: block;
         margin: 1rem 0;
         padding: 1rem;
+        border: 0;
+        outline: 0;
         text-transform: capitalize;
       }
 

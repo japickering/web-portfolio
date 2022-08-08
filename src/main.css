@@ -342,6 +342,11 @@ main {
   visibility: hidden !important;
 }
 
+.blog-icon {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .sticky-banner {
   position: fixed;
   z-index: 4;
