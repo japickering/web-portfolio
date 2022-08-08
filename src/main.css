@@ -107,7 +107,7 @@ img.preview {
   display: block;
 }
 
-caption {
+figcaption {
   position: absolute;
   display: block;
   width: 100%;
@@ -115,6 +115,8 @@ caption {
   color: var(--light);
   font-size: 1rem;
   text-shadow: 3px 3px 3px var(--darker);
+  text-align: center;
+  text-transform: capitalize;
 }
 
 .fa {
@@ -220,15 +222,6 @@ footer {
   color: var(--accent);
 }
 
-svg.github {
-  display: inline-block;
-  margin: 0 auto;
-  margin-right: 2px;
-  width: 18px;
-  height: 18px;
-  fill: #fff;
-}
-
 main {
   display: flex;
   width: 100%;
@@ -242,24 +235,25 @@ main {
   z-index: 2;
   bottom: 2%;
   right: 10px;
-  width: 80px;
-  height: 80px;
-  background: var(--midgrey);
-  border: 1px solid var(--primary);
+  width: 90px;
+  height: 90px;
+  border: 1px solid transparent;
   border-radius: 50%;
+  background: var(--deepblue);
   text-align: center;
-  opacity: 0.6;
+  opacity: 0.5;
   transition: all 0.5s ease;
 }
 .circle-top:hover, .circle-top:focus {
+  border: 2px solid var(--primary);
   opacity: 1;
 }
 .circle-top a {
   display: block;
-  margin-top: 40%;
+  padding-top: 40%;
   width: 100%;
   height: 100%;
-  color: var(--light);
+  color: var(--accent);
   font-size: 0.8rem;
   font-weight: 600;
 }
@@ -290,12 +284,20 @@ main {
 }
 
 .socials li {
-  display: block;
-  margin: 10px 0;
+  margin-top: 1rem;
 }
 .socials li a {
   display: block;
-  font-size: 1.2em;
+  font-size: 1rem;
+}
+.socials li a svg {
+  margin-right: 0.5rem;
+}
+.socials li a span {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 0.5rem;
+  font-weight: 500;
 }
 
 /* .showcase {
@@ -321,6 +323,10 @@ main {
 } */
 .block {
   display: block;
+}
+
+.i-block {
+  display: inline-block;
 }
 
 .flex {
@@ -375,7 +381,7 @@ main {
 }
 
 .p-1 {
-  padding: 1em;
+  padding: 1rem;
 }
 
 .m-0 {
@@ -383,41 +389,44 @@ main {
 }
 
 .m-1 {
-  margin: 1rem;
+  margin: 0.5rem;
 }
 
 .mt-1 {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 .mr-1 {
-  margin-right: 1rem;
+  margin-right: 0.5rem;
 }
 
 .mb-1 {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .ml-1 {
-  margin-left: 1rem;
+  margin-left: 0.5rem;
 }
 
 .navbar {
   display: block;
 }
 .navbar ul {
+  display: flex;
+  flex-direction: row;
   margin-top: 0.5rem;
 }
 .navbar ul li {
-  display: inline-block;
-  margin-left: 2rem;
+  margin-left: 1.5rem;
 }
 .navbar ul li a {
-  display: block;
   padding-right: 0.5rem;
   padding-bottom: 0.5rem;
   text-transform: capitalize;
   border-bottom: 1px solid transparent;
+}
+.navbar ul li .icon {
+  margin-right: 0.5rem;
 }
 
 .navbar ul li a:hover,
@@ -483,9 +492,12 @@ main {
 }
 .sidebar .slide-menu li a {
   display: block;
-  margin: 1rem 15px;
+  margin: 1rem 0;
   padding: 1rem;
   text-transform: capitalize;
+}
+.sidebar .slide-menu li .icon {
+  margin-right: 0.5rem;
 }
 .sidebar .slide-menu li:hover, .sidebar .slide-menu li:focus, .sidebar .slide-menu li.active {
   background: var(--primary);
@@ -509,9 +521,13 @@ section .subtitle {
   color: var(--primary);
 }
 
+.about {
+  min-height: 50vh;
+}
+
 .faqs,
 .contact {
-  min-height: 90vh;
+  min-height: 70vh;
 }
 
 .hero,
@@ -530,7 +546,6 @@ section .subtitle {
 }
 .hero li a,
 .contact li a {
-  margin: 1em;
   color: var(--light);
   font-size: 1.2rem;
 }

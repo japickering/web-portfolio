@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFile, faPencil, faQuestionCircle, faAddressBook } from '@fortawesome/free-solid-svg-icons';
 
-const menuItems = [
-  { name: 'about', icon: 'file' },
-  { name: 'blog', icon: 'edit' },
-  { name: 'faq', icon: 'question-circle' },
-  { name: 'contact', icon: 'comment' },
+const menu = [
+  { name: 'about', icon: faFile },
+  { name: 'blog', icon: faPencil },
+  { name: 'faq', icon: faQuestionCircle },
+  { name: 'contact', icon: faAddressBook },
 ];
 
 export default function Navbar() {
@@ -18,27 +20,25 @@ export default function Navbar() {
     });
   }, []);
 
-  const getMenuItems = (item) => {
-    const displayName = item.name === 'faq' ? 'FAQs' : item.name;
-    return (
-      <li key={item.name}>
-        <Link
-          to={item.name}
-          className={active === item.name ? 'nav-item active' : 'nav-item'}
-          onClick={() => {
-            setActive(item.name);
-          }}>
-          {displayName}
-        </Link>
-      </li>
-    );
-  };
-
   return (
     <nav id='navbar' className='navbar' tabIndex='0'>
       <ul>
-        {menuItems.map((item) => {
-          return getMenuItems(item);
+        {menu.map((item) => {
+          const displayName = item.name === 'faq' ? 'FAQs' : item.name;
+
+          return (
+            <li key={item.name}>
+              <Link
+                to={item.name}
+                className={active === item.name ? 'nav-item active' : 'nav-item'}
+                onClick={() => {
+                  setActive(item.name);
+                }}>
+                <FontAwesomeIcon className='icon' icon={item.icon} />
+                {displayName}
+              </Link>
+            </li>
+          );
         })}
       </ul>
     </nav>
