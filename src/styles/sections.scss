@@ -16,9 +16,13 @@ section {
   }
 }
 
+.about {
+  min-height: 50vh;
+}
+
 .faqs,
 .contact {
-  min-height: 90vh;
+  min-height: 70vh;
 }
 
 .hero,

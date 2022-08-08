@@ -1,6 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { scrollUp } from '../libs/scroll';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome, faFile, faPencil, faQuestionCircle, faAddressBook } from '@fortawesome/free-solid-svg-icons';
+
+const menu = [
+  { name: 'home', icon: faHome },
+  { name: 'about', icon: faFile },
+  { name: 'blog', icon: faPencil },
+  { name: 'faq', icon: faQuestionCircle },
+  { name: 'contact', icon: faAddressBook },
+];
 
 export default function SideMenu() {
   const [toggle, setToggle] = useState(false);
@@ -57,66 +67,24 @@ export default function SideMenu() {
       </button>
       <div className='overlay' aria-label='close button' onClick={() => closeMenu()}></div>
       <ul id='slide-menu' className='slide-menu' tabIndex='0'>
-        <li className={active === 'home' ? 'active' : ''}>
-          <Link
-            to='/'
-            className='nav-item'
-            onClick={() => {
-              closeMenu();
-              setActive('home');
-            }}>
-            home
-          </Link>
-        </li>
-        <li className={active === 'about' ? 'active' : ''}>
-          <Link
-            to='about'
-            className='nav-item'
-            onClick={() => {
-              setActive('about');
-              closeMenu();
-            }}>
-            about
-          </Link>
-        </li>
-        <li className={active === 'blog' ? 'active' : ''}>
-          <Link
-            to='blog'
-            className='nav-item'
-            onClick={() => {
-              setActive('blog');
-              closeMenu();
-            }}>
-            blog
-          </Link>
-        </li>
-        <li className={active === 'faq' ? 'active' : ''}>
-          <Link
-            to='faq'
-            className='nav-item'
-            onClick={() => {
-              setActive('faq');
-              closeMenu();
-            }}>
-            FAQs
-          </Link>
-        </li>
-        <li className={active === 'contact' ? 'active' : ''}>
-          <Link
-            to='contact'
-            className='nav-item'
-            onClick={() => {
-              setActive('contact');
-              closeMenu();
-            }}>
-            contact
-          </Link>
-        </li>
-        <li>
-          <a href='https://github.com/japickering/' className='nav-item' rel='noreferrer' target='_blank'>
-            Github
-          </a>
-        </li>
+        {menu.map((item) => {
+          const displayName = item.name === 'faq' ? 'FAQs' : item.name;
+
+          return (
+            <li key={item.name} className={active === item.name ? 'active' : ''}>
+              <Link
+                to='/'
+                className='nav-item'
+                onClick={() => {
+                  setActive(item.name);
+                  closeMenu();
+                }}>
+                <FontAwesomeIcon className='icon' icon={item.icon} />
+                {displayName}
+              </Link>
+            </li>
+          );
+        })}
       </ul>
     </nav>
   );

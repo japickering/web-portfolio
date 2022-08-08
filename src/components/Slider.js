@@ -13,7 +13,7 @@ export default function Slider({ previews, slides }) {
       <div className='slide'>
         <figure>
           <img src={slides[currentSlide].img} alt={slides[currentSlide].alt} />
-          <caption>{slides[currentSlide].alt}</caption>
+          <figcaption>{slides[currentSlide].alt}</figcaption>
         </figure>
       </div>
       <ul className='menu'>
@@ -25,7 +25,7 @@ export default function Slider({ previews, slides }) {
                 className={currentSlide === preview.id ? 'active' : ''}
                 onClick={(e) => btnClick(e, preview.id)}>
                 <img src={preview.img} alt={preview.alt} />
-                <caption>{preview.alt}</caption>
+                <figcaption>{preview.alt}</figcaption>
               </a>
             </li>
           );

@@ -8,12 +8,10 @@
   "socials": [
     {
       "name": "Github",
-      "icon": "fa fa-github",
       "url": "https://github.com/japickering/"
     },
     {
       "name": "Twitter",
-      "icon": "fa fa-twitter",
       "url": "https://twitter.com/jpuidev"
     }
   ],

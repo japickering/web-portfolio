@@ -2,18 +2,21 @@
   display: block;
 }
 .navbar ul {
+  display: flex;
+  flex-direction: row;
   margin-top: 0.5rem;
 }
 .navbar ul li {
-  display: inline-block;
-  margin-left: 2rem;
+  margin-left: 1.5rem;
 }
 .navbar ul li a {
-  display: block;
   padding-right: 0.5rem;
   padding-bottom: 0.5rem;
   text-transform: capitalize;
   border-bottom: 1px solid transparent;
+}
+.navbar ul li .icon {
+  margin-right: 0.5rem;
 }
 
 .navbar ul li a:hover,
@@ -79,9 +82,12 @@
 }
 .sidebar .slide-menu li a {
   display: block;
-  margin: 1rem 15px;
+  margin: 1rem 0;
   padding: 1rem;
   text-transform: capitalize;
+}
+.sidebar .slide-menu li .icon {
+  margin-right: 0.5rem;
 }
 .sidebar .slide-menu li:hover, .sidebar .slide-menu li:focus, .sidebar .slide-menu li.active {
   background: var(--primary);

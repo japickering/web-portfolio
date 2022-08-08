@@ -2,18 +2,23 @@
   display: block;
 
   ul {
+    display: flex;
+    flex-direction: row;
     margin-top: 0.5rem;
 
     li {
-      display: inline-block;
-      margin-left: 2rem;
+      margin-left: 1.5rem;
 
       a {
-        display: block;
+        //   display: block;
         padding-right: 0.5rem;
         padding-bottom: 0.5rem;
         text-transform: capitalize;
         border-bottom: 1px solid transparent;
+      }
+
+      .icon {
+        margin-right: 0.5rem;
       }
     }
   }
@@ -87,9 +92,13 @@
 
       a {
         display: block;
-        margin: 1rem 15px;
+        margin: 1rem 0;
         padding: 1rem;
         text-transform: capitalize;
+      }
+
+      .icon {
+        margin-right: 0.5rem;
       }
 
       &:hover,
