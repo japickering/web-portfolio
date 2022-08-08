@@ -68,19 +68,21 @@ export default function SideMenu() {
       <div className='overlay' aria-label='close button' onClick={() => closeMenu()}></div>
       <ul id='slide-menu' className='slide-menu' tabIndex='0'>
         {menu.map((item) => {
-          const displayName = item.name === 'faq' ? 'FAQs' : item.name;
+          const { name, icon } = item;
+          const label = name === 'faq' ? 'FAQs' : name;
+          const path = name === 'home' ? '/' : '/' + name;
 
           return (
-            <li key={item.name} className={active === item.name ? 'active' : ''}>
+            <li key={name} className={active === name ? 'active' : ''}>
               <Link
-                to='/'
+                to={path}
                 className='nav-item'
                 onClick={() => {
-                  setActive(item.name);
+                  setActive(name);
                   closeMenu();
                 }}>
-                <FontAwesomeIcon className='icon' icon={item.icon} />
-                {displayName}
+                <FontAwesomeIcon className='icon' icon={icon} />
+                {label}
               </Link>
             </li>
           );
