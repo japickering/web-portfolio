@@ -1,7 +1,7 @@
 import React from 'react';
 import { scrollUp } from '../libs/scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPencil, faCalendar } from '@fortawesome/free-solid-svg-icons';
+import { faPencil, faCalendar, faBackward } from '@fortawesome/free-solid-svg-icons';
 
 export default function BlogPost({ date, title, author, summary, img, alt, content }) {
   return (
@@ -39,7 +39,8 @@ export default function BlogPost({ date, title, author, summary, img, alt, conte
             scrollUp();
             window.history.go(-1);
           }}>
-          <i className='fa fa-arrow-left'></i>Back
+          <FontAwesomeIcon className='blog-icon' icon={faBackward} />
+          Back
         </button>
       </div>
     </section>
