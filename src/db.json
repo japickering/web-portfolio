@@ -90,28 +90,6 @@
     ],
     "techstack": ["CSS", "JavaScript", "TypeScript", "React JS"]
   },
-  "faq": [
-    {
-      "q": "Are you currently looking for a new role?",
-      "a": "I'm open to new job roles."
-    },
-    {
-      "q": "Describe your ideal job role?",
-      "a": "The opportunity to work in a team on greenfield projects like creating 3D interactive spaces or developing online learning platforms."
-    },
-    {
-      "q": "What are you looking for in your next job?",
-      "a": "A software development role with remote working. Access to new and emerging tech stacks via training courses is also important to grow my worth and potential."
-    },
-    {
-      "q": "Do you prefer to work remotely or in the office?",
-      "a": "Fully remote preferred, but I'm open to hybrid working if the commute is minimal."
-    },
-    {
-      "q": "Would you consider cross training in other languages such as Node JS or React Native?",
-      "a": "I'm open to learning new things if it leads to progression as part of on the job training."
-    }
-  ],
   "skills": [
     {
       "id": 0,

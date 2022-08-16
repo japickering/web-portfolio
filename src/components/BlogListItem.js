@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPencil, faCalendar } from '@fortawesome/free-solid-svg-icons';
+import { faCalendar } from '@fortawesome/free-solid-svg-icons';
 
 export default function BlogListItem({ date, slug, title, author, summary, img, alt }) {
   return (
@@ -11,8 +11,6 @@ export default function BlogListItem({ date, slug, title, author, summary, img, 
           <h2 className='title'>{title}</h2>
         </Link>
         <h3>
-          <FontAwesomeIcon className='blog-icon' icon={faPencil} />
-          by {author}
           <FontAwesomeIcon className='blog-icon' icon={faCalendar} />
           {date}
         </h3>

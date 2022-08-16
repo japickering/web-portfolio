@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFile, faPencil, faQuestionCircle, faAddressBook } from '@fortawesome/free-solid-svg-icons';
+import { faFile, faPencil, faAddressBook } from '@fortawesome/free-solid-svg-icons';
 
 const menu = [
   { name: 'about', icon: faFile },
   { name: 'blog', icon: faPencil },
-  { name: 'faq', icon: faQuestionCircle },
   { name: 'contact', icon: faAddressBook },
 ];
 
@@ -24,8 +23,6 @@ export default function Navbar() {
     <nav id='navbar' className='navbar' tabIndex='0'>
       <ul>
         {menu.map((item) => {
-          const displayName = item.name === 'faq' ? 'FAQs' : item.name;
-
           return (
             <li key={item.name}>
               <Link
@@ -35,7 +32,7 @@ export default function Navbar() {
                   setActive(item.name);
                 }}>
                 <FontAwesomeIcon className='icon' icon={item.icon} />
-                {displayName}
+                {item.name}
               </Link>
             </li>
           );
