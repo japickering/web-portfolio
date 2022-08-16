@@ -2,13 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { scrollUp } from '../libs/scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faFile, faPencil, faQuestionCircle, faAddressBook } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faFile, faPencil, faAddressBook } from '@fortawesome/free-solid-svg-icons';
 
 const menu = [
   { name: 'home', icon: faHome },
   { name: 'about', icon: faFile },
   { name: 'blog', icon: faPencil },
-  { name: 'faq', icon: faQuestionCircle },
   { name: 'contact', icon: faAddressBook },
 ];
 
@@ -69,7 +68,6 @@ export default function SideMenu() {
       <ul id='slide-menu' className='slide-menu' tabIndex='0'>
         {menu.map((item) => {
           const { name, icon } = item;
-          const label = name === 'faq' ? 'FAQs' : name;
           const path = name === 'home' ? '/' : '/' + name;
 
           return (
@@ -82,7 +80,7 @@ export default function SideMenu() {
                   closeMenu();
                 }}>
                 <FontAwesomeIcon className='icon' icon={icon} />
-                {label}
+                {name}
               </Link>
             </li>
           );

@@ -6,7 +6,6 @@ import './main.scss';
 
 import Home from './pages/Home';
 import About from './pages/About';
-import Faqs from './pages/Faqs';
 import Contact from './pages/Contact';
 import Blog from './pages/Blog';
 import Navbar from './components/Navbar';
@@ -16,7 +15,7 @@ import BuyMeCoffee from './components/BuyMeCoffee';
 import BlogPost from './components/BlogPost';
 
 export default function App() {
-  const { about, author, avatar, skills, faq, socials } = db;
+  const { about, author, avatar, skills, socials } = db;
   const posts = blog.posts.map((post) => {
     return post;
   });
@@ -34,9 +33,8 @@ export default function App() {
       <Routes>
         <Route path='/' element={<Home {...db} />} />
         <Route path='about' element={<About about={about} author={author} avatar={avatar} skills={skills} />} />
-        <Route path='faq' element={<Faqs faq={faq} />} />
-        <Route path='contact' element={<Contact socials={socials} />} />
         <Route path='blog' element={<Blog posts={posts} />} />
+        <Route path='contact' element={<Contact socials={socials} />} />
 
         {posts.map((post, index) => {
           return (
