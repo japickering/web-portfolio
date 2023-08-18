@@ -4,7 +4,7 @@ import Skills from '../components/Skills';
 export default function About({ about, author, avatar, skills }) {
   return (
     <main>
-      <section className='about' tabIndex='0'>
+      <section className='about'>
         <div className='content fadein'>
           <div>
             <img src={avatar} className='avatar' alt='avatar' />

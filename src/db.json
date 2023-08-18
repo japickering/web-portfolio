@@ -1,18 +1,18 @@
 {
-  "title": "Front-end Software Developer",
-  "author": "James Pickering @jpuidev",
-  "headline": "Creating highly interactive, responsive, mobile friendly websites and applications",
-  "about": "I am a Front-end Software Developer living in Manchester, England. I've built websites and interactive components for the fashion, training and digital marketing industries for the past 12 years. In my spare time I enjoy travel photography, discovering new bands and going to live music gigs.",
-  "avatar": "/assets/myphoto.jpg",
-  "contact": "Contact me on socials if you have any job opportunities you'd like to discuss, or any questions you might have.",
+  "title": "Professional Front-end UI Development",
+  "author": "James A. Pickering",
+  "headline": "Creating highly interactive and mobile-friendly websites and applications",
+  "about": "James is a Senior UI developer with a natural flair for creative problem solving, he is a specialist in the field of front-end web development aimed at users of desktop computers and mobile devices. He has built highly interactive solutions for top name brands such as Wren Kitchens, JD Sports, and JD Williams. James has worked with numerous Agile teams as an advocate for user needs and applying UX principles in everything that he does. In the last 6 years he has kept up to date with JavaScript and React JS. Leveraging out of the box performance and usability benefits from these tools. He learns something new from every project, sharing his expertise and bringing fresh insights to new projects.",
+  "avatar": "/assets/avatar.png",
+  "contact": "Reach out to me me on Github or LinkedIn if you have questions or feedback about any of the topics I cover on this website.",
   "socials": [
     {
       "name": "Github",
       "url": "https://github.com/japickering/"
     },
     {
-      "name": "Twitter",
-      "url": "https://twitter.com/jpuidev"
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/"
     }
   ],
   "intel": {

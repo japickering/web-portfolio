@@ -3,7 +3,7 @@ import { scrollUp } from '../libs/scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendar, faBackward } from '@fortawesome/free-solid-svg-icons';
 
-export default function BlogPost({ date, title, author, summary, img, alt, content }) {
+export default function BlogPost({ date, title, summary, img, alt, content }) {
   return (
     <section className='blog' tabIndex='0'>
       <div className='content fadein'>

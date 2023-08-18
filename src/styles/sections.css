@@ -46,8 +46,7 @@ section .subtitle {
 .contact li a:focus {
   color: var(--accent);
   opacity: 1;
-  -webkit-animation: hoverfade 0.3s ease-in;
-          animation: hoverfade 0.3s ease-in;
+  animation: hoverfade 0.3s ease-in;
 }
 
 .hero {
@@ -116,4 +115,4 @@ section .subtitle {
 .blog .subtitle,
 .faqs .subtitle {
   color: var(--black);
-}
+}/*# sourceMappingURL=sections.css.map */

@@ -237,6 +237,10 @@ main {
   align-items: center;
 }
 
+.avatar {
+  border-radius: 50%;
+}
+
 .circle-top {
   position: fixed;
   display: block;
@@ -253,7 +257,8 @@ main {
   transition: all 0.5s ease;
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:active {
     border: 2px solid var(--primary);
     opacity: 1;
   }
@@ -267,13 +272,6 @@ main {
     font-size: 0.8rem;
     font-weight: 600;
   }
-}
-
-.avatar {
-  max-width: 200px;
-  margin-right: 10px;
-  border: 1px solid var(--black);
-  border-radius: 50%;
 }
 
 .featured-image {

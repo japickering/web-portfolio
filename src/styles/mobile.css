@@ -17,16 +17,16 @@
 }
 @media screen and (min-width: 1200px) {
   .about,
-.skills,
-.blog,
-.faqs {
+  .skills,
+  .blog,
+  .faqs {
     align-items: flex-start;
     justify-content: center;
   }
   .about .content,
-.skills .content,
-.blog .content,
-.faqs .content {
+  .skills .content,
+  .blog .content,
+  .faqs .content {
     width: 60%;
     max-width: inherit;
   }
@@ -85,4 +85,4 @@
     padding: 10px;
     width: 100%;
   }
-}
+}/*# sourceMappingURL=mobile.css.map */

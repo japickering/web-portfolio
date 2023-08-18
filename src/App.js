@@ -42,8 +42,8 @@ export default function App() {
               key={index}
               path={`blog/${post.slug}`}
               element={
-                <main>
-                  <section className='hero' tabIndex='0'>
+                <div>
+                  <section className='hero'>
                     <div className='content'>
                       <h2 className='title'>
                         <Link to='/blog/'>Back to Blog</Link>
@@ -51,7 +51,7 @@ export default function App() {
                     </div>
                   </section>
                   <BlogPost {...post} />
-                </main>
+                </div>
               }
             />
           );

@@ -5,7 +5,7 @@ export default function Skills({ skills }) {
 	const [target, setTarget] = useState(skills[0].desc);
 
 	return (
-		<section className="skills" tabIndex="0">
+		<section className="skills">
 			<div className="content fadein">
 				<h2 className="title">Skills and Tech Stack</h2>
 				<ul className="tabs" role="tablist">

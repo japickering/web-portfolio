@@ -229,6 +229,10 @@ main {
   align-items: center;
 }
 
+.avatar {
+  border-radius: 50%;
+}
+
 .circle-top {
   position: fixed;
   display: block;
@@ -244,7 +248,7 @@ main {
   opacity: 0.5;
   transition: all 0.5s ease;
 }
-.circle-top:hover, .circle-top:focus {
+.circle-top:hover, .circle-top:focus, .circle-top:active {
   border: 2px solid var(--primary);
   opacity: 1;
 }
@@ -256,13 +260,6 @@ main {
   color: var(--accent);
   font-size: 0.8rem;
   font-weight: 600;
-}
-
-.avatar {
-  max-width: 200px;
-  margin-right: 10px;
-  border: 1px solid var(--black);
-  border-radius: 50%;
 }
 
 .featured-image {
@@ -428,6 +425,8 @@ main {
   padding-right: 0.5rem;
   padding-bottom: 0.5rem;
   text-transform: capitalize;
+  border: 0;
+  outline: 0;
   border-bottom: 1px solid transparent;
 }
 .navbar ul li .icon {
@@ -499,6 +498,8 @@ main {
   display: block;
   margin: 1rem 0;
   padding: 1rem;
+  border: 0;
+  outline: 0;
   text-transform: capitalize;
 }
 .sidebar .slide-menu li .icon {
@@ -559,8 +560,7 @@ section .subtitle {
 .contact li a:focus {
   color: var(--accent);
   opacity: 1;
-  -webkit-animation: hoverfade 0.3s ease-in;
-          animation: hoverfade 0.3s ease-in;
+  animation: hoverfade 0.3s ease-in;
 }
 
 .hero {
@@ -693,70 +693,40 @@ section .subtitle {
 }
 
 .reveal {
-  -webkit-animation: fade 1s forwards 1s ease;
-          animation: fade 1s forwards 1s ease;
+  animation: fade 1s forwards 1s ease;
 }
 
 .fadein {
   opacity: 0;
 }
 .fadein:nth-child(1) {
-  -webkit-animation: fade 300ms forwards ease-in;
-          animation: fade 300ms forwards ease-in;
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+  animation: fade 300ms forwards ease-in;
+  animation-delay: 0.3s;
 }
 .fadein:nth-child(2) {
-  -webkit-animation: fade 300ms forwards ease-in;
-          animation: fade 300ms forwards ease-in;
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
+  animation: fade 300ms forwards ease-in;
+  animation-delay: 0.6s;
 }
 .fadein:nth-child(3) {
-  -webkit-animation: fade 300ms forwards ease-in;
-          animation: fade 300ms forwards ease-in;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  animation: fade 300ms forwards ease-in;
+  animation-delay: 1s;
 }
 .fadein:nth-child(4) {
-  -webkit-animation: fade 300ms forwards ease-in;
-          animation: fade 300ms forwards ease-in;
-  -webkit-animation-delay: 1.3s;
-          animation-delay: 1.3s;
+  animation: fade 300ms forwards ease-in;
+  animation-delay: 1.3s;
 }
 .fadein:nth-child(5) {
-  -webkit-animation: fade 300ms forwards ease-in;
-          animation: fade 300ms forwards ease-in;
-  -webkit-animation-delay: 1.6s;
-          animation-delay: 1.6s;
+  animation: fade 300ms forwards ease-in;
+  animation-delay: 1.6s;
 }
 .fadein:nth-child(6) {
-  -webkit-animation: fade 300ms forwards ease-in;
-          animation: fade 300ms forwards ease-in;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  animation: fade 300ms forwards ease-in;
+  animation-delay: 2s;
 }
 
 @keyframes fade {
   from {
     opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes hoverfade {
-  from {
-    opacity: 0.7;
   }
   to {
     opacity: 1;
@@ -771,17 +741,7 @@ section .subtitle {
   }
 }
 .fadeout {
-  -webkit-animation: fadeout 0.3s forwards ease-in;
-          animation: fadeout 0.3s forwards ease-in;
-}
-
-@-webkit-keyframes fadeout {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
+  animation: fadeout 0.3s forwards ease-in;
 }
 
 @keyframes fadeout {
@@ -790,14 +750,6 @@ section .subtitle {
   }
   to {
     opacity: 0;
-  }
-}
-@-webkit-keyframes zoom {
-  from {
-    width: 80%;
-  }
-  to {
-    width: 120%;
   }
 }
 @keyframes zoom {
@@ -809,32 +761,19 @@ section .subtitle {
   }
 }
 .jd-slides0 {
-  -webkit-animation: jd-slides0 0.5s ease-in-out forwards;
-          animation: jd-slides0 0.5s ease-in-out forwards;
+  animation: jd-slides0 0.5s ease-in-out forwards;
 }
 
 .jd-slides1 {
-  -webkit-animation: jd-slides1 0.5s ease-in-out forwards;
-          animation: jd-slides1 0.5s ease-in-out forwards;
+  animation: jd-slides1 0.5s ease-in-out forwards;
 }
 
 .kl-slides0 {
-  -webkit-animation: kl-slides0 0.5s ease-in-out forwards;
-          animation: kl-slides0 0.5s ease-in-out forwards;
+  animation: kl-slides0 0.5s ease-in-out forwards;
 }
 
 .kl-slides1 {
-  -webkit-animation: kl-slides1 0.5s ease-in-out forwards;
-          animation: kl-slides1 0.5s ease-in-out forwards;
-}
-
-@-webkit-keyframes jd-slides0 {
-  from {
-    left: -330px;
-  }
-  to {
-    left: 0;
-  }
+  animation: kl-slides1 0.5s ease-in-out forwards;
 }
 
 @keyframes jd-slides0 {
@@ -845,14 +784,6 @@ section .subtitle {
     left: 0;
   }
 }
-@-webkit-keyframes jd-slides1 {
-  from {
-    left: 0;
-  }
-  to {
-    left: -330px;
-  }
-}
 @keyframes jd-slides1 {
   from {
     left: 0;
@@ -861,28 +792,12 @@ section .subtitle {
     left: -330px;
   }
 }
-@-webkit-keyframes kl-slides0 {
-  from {
-    left: -850px;
-  }
-  to {
-    left: 0;
-  }
-}
 @keyframes kl-slides0 {
   from {
     left: -850px;
   }
   to {
     left: 0;
-  }
-}
-@-webkit-keyframes kl-slides1 {
-  from {
-    left: 0;
-  }
-  to {
-    left: -850px;
   }
 }
 @keyframes kl-slides1 {
@@ -912,16 +827,16 @@ section .subtitle {
 }
 @media screen and (min-width: 1200px) {
   .about,
-.skills,
-.blog,
-.faqs {
+  .skills,
+  .blog,
+  .faqs {
     align-items: flex-start;
     justify-content: center;
   }
   .about .content,
-.skills .content,
-.blog .content,
-.faqs .content {
+  .skills .content,
+  .blog .content,
+  .faqs .content {
     width: 60%;
     max-width: inherit;
   }
@@ -980,4 +895,4 @@ section .subtitle {
     padding: 10px;
     width: 100%;
   }
-}
+}/*# sourceMappingURL=main.css.map */
