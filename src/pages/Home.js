@@ -32,7 +32,7 @@ export default function Home({ title, headline, kidsloop, qbots, jdsports, wrenk
         {jdsports.slides.map((slide) => {
           return (
             <div key={slide.id} className='products'>
-              <img src={slide.img} alt={slide.title} />
+              <img src={slide.img} alt={slide.alt} />
             </div>
           );
         })}

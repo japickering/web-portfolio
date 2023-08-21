@@ -12,7 +12,7 @@ export default function PortfolioContent({ title, desc, body, techstack }) {
       </p>
       <ul className='tabs'>
         {techstack.map((tech) => {
-          const tip = 'find out more about ' + tech;
+          const tip = 'learn more about ' + tech;
           return (
             <li key={tech}>
               <Link to='/about' className='tech-tab' title={tip}>
