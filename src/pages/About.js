@@ -7,10 +7,10 @@ export default function About({ about, author, avatar, skills }) {
       <section className='about'>
         <div className='content fadein'>
           <div>
-            <img src={avatar} className='avatar' alt='avatar' />
+            <img src={avatar} className='avatar' alt='avatar pic' />
           </div>
           <div>
-            <h2 className='title'>{author}</h2>
+            <h2 className='title'>About me</h2>
             <p>{about}</p>
           </div>
         </div>

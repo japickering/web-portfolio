@@ -20,7 +20,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav id='navbar' className='navbar' tabIndex='0'>
+    <nav id='navbar' className='navbar'>
       <ul>
         {menu.map((item) => {
           return (
