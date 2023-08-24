@@ -163,7 +163,6 @@ button,
 
 .btn-more,
 .btn-back {
-  border: 1px solid var(--dimmed);
   margin-top: 5px;
   padding: 10px;
   background: var(--success);
@@ -171,10 +170,12 @@ button,
   border-radius: 0.3rem;
   text-transform: capitalize;
 }
-.btn-more:hover, .btn-more:focus,
+.btn-more:hover, .btn-more:focus, .btn-more.active,
 .btn-back:hover,
-.btn-back:focus {
-  border: 1px solid var(--lightgrey);
+.btn-back:focus,
+.btn-back.active {
+  color: white;
+  border: 1px solid var(--primary);
 }
 
 .tabs li {

@@ -169,7 +169,6 @@ button,
 
 .btn-more,
 .btn-back {
-  border: 1px solid var(--dimmed);
   margin-top: 5px;
   padding: 10px;
   background: var(--success);
@@ -178,8 +177,10 @@ button,
   text-transform: capitalize;
 
   &:hover,
-  &:focus {
-    border: 1px solid var(--lightgrey);
+  &:focus,
+  &.active {
+    color: white;
+    border: 1px solid var(--primary);
   }
 }
 

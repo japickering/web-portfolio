@@ -75,7 +75,7 @@ export default function SideMenu() {
         aria-label="close button"
         onClick={() => closeMenu()}
       ></div>
-      <ul id="slide-menu" className="slide-menu" role="menu">
+      <ul id="slide-menu" className="slide-menu">
         {menu.map((item) => {
           const { name, icon } = item;
           const path = name === "home" ? "/" : "/" + name;

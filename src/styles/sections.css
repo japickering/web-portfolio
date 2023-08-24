@@ -102,7 +102,7 @@ section .subtitle {
 }
 .blog .content p,
 .faqs .content p {
-  color: var(--midgrey);
+  color: var(--dark);
 }
 .blog .title,
 .faqs .title {

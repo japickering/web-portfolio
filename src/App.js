@@ -3,6 +3,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import db from "./db.json";
 import blog from "./blog.json";
 import "./main.scss";
+import logo from "./logo.svg";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -24,7 +25,7 @@ export default function App() {
     <div id="top" className="container">
       <header className="header" role="banner">
         <Link id="home" to="/">
-          <img src="logo.svg" alt="logo" />
+          <img src={logo} alt="logo" />
         </Link>
         <Navbar />
       </header>
@@ -52,13 +53,6 @@ export default function App() {
               path={`blog/${post.slug}`}
               element={
                 <div>
-                  <section className="hero">
-                    <div className="content">
-                      <h2 className="title">
-                        <Link to="/blog/">Back to Blog</Link>
-                      </h2>
-                    </div>
-                  </section>
                   <BlogPost {...post} />
                 </div>
               }
