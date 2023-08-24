@@ -43,7 +43,7 @@
         "alt": "planner design choices"
       }
     ],
-    "techstack": ["HTML5", "CSS", "React JS", "JavaScript", "TypeScript"]
+    "techstack": ["React JS", "JavaScript", "TypeScript"]
   },
   "kidsloop": {
     "title": "KidsLoop Coding Assignment",
@@ -53,14 +53,14 @@
     "className": "dot-kl",
     "img": "/assets/kidsloop-macbook-pro.png",
     "alt": "kidsloop design on macbook pro",
-    "techstack": ["HTML5", "CSS", "React JS", "JavaScript", "REST API"]
+    "techstack": ["React JS", "JavaScript", "REST API"]
   },
   "qbots": {
     "title": "qEnergy Dashboard on macbook pro",
     "desc": "Smart energy dashboards for energy saving analytics",
     "body": "I developed smart energy dashboards for SME and Enterprise customers offering insights and savings predictions based on energy usage data collected over day and monthly periods.",
     "img": "/assets/QEnergy-Dashboard.png",
-    "techstack": ["HTML5", "CSS", "JavaScript", "React JS", "eCharts"]
+    "techstack": ["JavaScript", "React JS", "eCharts"]
   },
   "intellicentrics": {
     "title": "Intellicentrics mobile app",
@@ -74,7 +74,7 @@
     "title": "JD Sports",
     "desc": "Desktop and mobile landing pages",
     "body": "Desktop landing pages and mobile responsive design.",
-    "techstack": ["Photoshop", "HTML5", "CSS", "JavaScript", "jQuery"],
+    "techstack": ["Mesh", "JavaScript", "jQuery"],
     "slidesContainerId": "jd-slides",
     "className": "dot-jd",
     "previews": [
