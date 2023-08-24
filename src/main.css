@@ -118,7 +118,7 @@ figcaption {
   width: 100%;
   bottom: 2rem;
   color: var(--light);
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-shadow: 3px 3px 3px var(--darker);
   text-align: center;
   text-transform: capitalize;
@@ -147,12 +147,12 @@ a.active {
 button,
 .btn {
   display: inline-block;
-  padding: 1em;
-  outline: none;
+  padding: 1rem;
   border: 1px solid transparent;
+  outline: none;
   background: transparent;
   color: white;
-  font-size: 16px;
+  font-size: 1rem;
   box-shadow: none;
   cursor: pointer;
 }
@@ -200,22 +200,33 @@ button,
 }
 
 .container {
-  display: block;
+  display: flex;
+  flex-direction: column;
   position: relative;
-  margin: 0 auto;
   width: 100%;
-  max-width: 2400px;
   min-height: 100vh;
   overflow: hidden;
+  background: var(--dimmed);
 }
 
 header,
 footer {
   display: flex;
+  margin: 0 auto;
   padding: 1em;
+  max-width: 1800px;
   width: 100%;
   background: var(--black);
   color: #fff;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1800px;
 }
 
 .logo {
@@ -225,13 +236,6 @@ footer {
 
 .logo span {
   color: var(--accent);
-}
-
-main {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
 }
 
 .circle-top {
@@ -446,7 +450,7 @@ main {
   top: 0;
   right: 0;
   color: #fff;
-  z-index: 10;
+  z-index: 2;
 }
 .sidebar .btn-toggle {
   display: block;
@@ -459,21 +463,21 @@ main {
 }
 .sidebar .overlay {
   position: absolute;
-  width: 0;
-  min-height: 100vh;
-  top: 70px;
+  z-index: 3;
+  width: 100vw;
+  height: 100vh;
+  top: 60px;
   right: 0;
   background: var(--darker);
   opacity: 0;
-  z-index: 10;
 }
 .sidebar .overlay.active {
-  width: 800px;
   opacity: 0.5;
   cursor: pointer;
 }
 .sidebar .slide-menu {
   position: absolute;
+  z-index: 4;
   top: 70px;
   right: 0;
   padding: 1rem;
@@ -483,7 +487,6 @@ main {
   opacity: 0;
   pointer-events: none;
   transition: all 0.5s;
-  z-index: 99;
 }
 .sidebar .slide-menu.active {
   width: 200px;
@@ -504,7 +507,7 @@ main {
   text-transform: capitalize;
 }
 .sidebar .slide-menu li .icon {
-  margin-right: 0.5rem;
+  margin-right: 1rem;
 }
 .sidebar .slide-menu li:hover, .sidebar .slide-menu li:focus, .sidebar .slide-menu li.active {
   background: var(--primary);
@@ -650,12 +653,10 @@ section .subtitle {
   max-width: 720px;
 }
 .slider-wrapper .slide img {
-  border: 1px solid var(--black);
-  border-radius: 2%;
+  border: 1px solid var(--darker);
   text-align: center;
 }
 .slider-wrapper .slide caption {
-  font-size: 1.4rem;
   text-shadow: 3px 3px 3px var(--darker);
 }
 .slider-wrapper .menu {
@@ -686,7 +687,6 @@ section .subtitle {
 }
 .slider-wrapper .menu li a caption {
   bottom: 1rem;
-  font-size: 1.2rem;
 }
 .slider-wrapper .menu li a.active img {
   border: 2px solid var(--primary);

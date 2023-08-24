@@ -1,18 +1,17 @@
-import React from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
-import db from './db.json';
-import blog from './blog.json';
-import './main.scss';
+import React from "react";
+import { Routes, Route, Link } from "react-router-dom";
+import db from "./db.json";
+import blog from "./blog.json";
+import "./main.scss";
 
-import Home from './pages/Home';
-import About from './pages/About';
-import Contact from './pages/Contact';
-import Blog from './pages/Blog';
-import Navbar from './components/Navbar';
-import SideMenu from './components/SideMenu';
-import Socials from './components/Socials';
-import BuyMeCoffee from './components/BuyMeCoffee';
-import BlogPost from './components/BlogPost';
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Blog from "./pages/Blog";
+import Navbar from "./components/Navbar";
+import SideMenu from "./components/SideMenu";
+import Socials from "./components/Socials";
+import BlogPost from "./components/BlogPost";
 
 export default function App() {
   const { about, author, avatar, skills, socials } = db;
@@ -22,19 +21,29 @@ export default function App() {
   posts.reverse();
 
   return (
-    <div id='top' className='container'>
-      <header className='header' role='banner'>
-        <Link id='home' to='/'>
-          <img src='logo.svg' alt='logo' />
+    <div id="top" className="container">
+      <header className="header" role="banner">
+        <Link id="home" to="/">
+          <img src="logo.svg" alt="logo" />
         </Link>
         <Navbar />
       </header>
       <SideMenu />
       <Routes>
-        <Route path='/' element={<Home {...db} />} />
-        <Route path='about' element={<About about={about} author={author} avatar={avatar} skills={skills} />} />
-        <Route path='blog' element={<Blog posts={posts} />} />
-        <Route path='contact' element={<Contact socials={socials} />} />
+        <Route path="/" element={<Home {...db} />} />
+        <Route
+          path="about"
+          element={
+            <About
+              about={about}
+              author={author}
+              avatar={avatar}
+              skills={skills}
+            />
+          }
+        />
+        <Route path="blog" element={<Blog posts={posts} />} />
+        <Route path="contact" element={<Contact socials={socials} />} />
 
         {posts.map((post, index) => {
           return (
@@ -43,10 +52,10 @@ export default function App() {
               path={`blog/${post.slug}`}
               element={
                 <div>
-                  <section className='hero'>
-                    <div className='content'>
-                      <h2 className='title'>
-                        <Link to='/blog/'>Back to Blog</Link>
+                  <section className="hero">
+                    <div className="content">
+                      <h2 className="title">
+                        <Link to="/blog/">Back to Blog</Link>
                       </h2>
                     </div>
                   </section>
@@ -57,17 +66,13 @@ export default function App() {
           );
         })}
       </Routes>
-      <footer className='split'>
-        <div>
-          <h4>Support the channel</h4>
-          <BuyMeCoffee link='https://www.buymeacoffee.com/uRPIo7n' />
-        </div>
+      <footer>
         <div>
           <Socials socials={socials} />
         </div>
       </footer>
-      <div className='circle-top'>
-        <a href='#top'>back to top</a>
+      <div className="circle-top">
+        <a href="#top">back to top</a>
       </div>
     </div>
   );

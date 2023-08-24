@@ -37,7 +37,7 @@
   top: 0;
   right: 0;
   color: #fff;
-  z-index: 10;
+  z-index: 2;
 
   .btn-toggle {
     display: block;
@@ -52,16 +52,15 @@
 
   .overlay {
     position: absolute;
-    width: 0;
-    min-height: 100vh;
-    top: 70px;
+    z-index: 3;
+    width: 100vw;
+    height: 100vh;
+    top: 60px;
     right: 0;
     background: var(--darker);
     opacity: 0;
-    z-index: 10;
 
     &.active {
-      width: 800px;
       opacity: 0.5;
       cursor: pointer;
     }
@@ -69,6 +68,7 @@
 
   .slide-menu {
     position: absolute;
+    z-index: 4;
     top: 70px;
     right: 0;
     padding: 1rem;
@@ -78,7 +78,6 @@
     opacity: 0;
     pointer-events: none;
     transition: all 0.5s;
-    z-index: 99;
 
     &.active {
       width: 200px;
@@ -101,7 +100,7 @@
       }
 
       .icon {
-        margin-right: 0.5rem;
+        margin-right: 1rem;
       }
 
       &:hover,

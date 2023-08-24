@@ -8,13 +8,11 @@
     max-width: 720px;
 
     img {
-      border: 1px solid var(--black);
-      border-radius: 2%;
+      border: 1px solid var(--darker);
       text-align: center;
     }
 
     caption {
-      font-size: 1.4rem;
       text-shadow: 3px 3px 3px var(--darker);
     }
   }
@@ -50,7 +48,6 @@
 
         caption {
           bottom: 1rem;
-          font-size: 1.2rem;
         }
 
         &.active {

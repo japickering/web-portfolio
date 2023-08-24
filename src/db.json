@@ -1,10 +1,10 @@
 {
-  "title": "Professional Front-end UI Development",
+  "title": "Professional Front-end UI Developer",
   "author": "James A. Pickering",
   "headline": "Creating highly interactive and mobile-friendly websites and applications",
   "about": "James Pickering is a Senior UI developer with a natural flair for creative problem solving, he is a specialist in the field of front-end web development aimed at users of desktop computers and mobile devices. He has built highly interactive solutions for top name brands such as Wren Kitchens, JD Sports, and JD Williams. James has worked with numerous Agile teams as an advocate for user needs and applying UX principles in everything that he does. In the last 6 years he has kept up to date with JavaScript and React JS. Leveraging out of the box performance and usability benefits from these tools. He learns something new from every project, sharing his expertise and bringing fresh insights to new projects.",
   "avatar": "/assets/avatar.png",
-  "contact": "Reach out to me me on Github or LinkedIn if you have questions or feedback about any of the topics I cover on this website.",
+  "contact": "Contact me on Github or LinkedIn if you have questions or feedback about any of the topics I cover on this website.",
   "socials": [
     {
       "name": "Github",
@@ -15,67 +15,10 @@
       "url": "https://www.linkedin.com/"
     }
   ],
-  "intel": {
-    "title": "SEC³URE Companion App for Intellicentrics",
-    "desc": "Refreshed responsive design",
-    "body": "Front-end development and responsive mobile design.",
-    "img": "/assets/ip6-secure.png",
-    "alt": "design on iphone",
-    "techstack": ["HTML5", "CSS", "JavaScript", "TypeScript", "React Native"]
-  },
-  "jdsports": {
-    "title": "JD Sports",
-    "desc": "Desktop and mobile landing pages",
-    "body": "Desktop landing pages and mobile responsive design.",
-    "techstack": ["Photoshop", "HTML5", "CSS", "jQuery"],
-    "slidesContainerId": "jd-slides",
-    "className": "dot-jd",
-    "slides": [
-      {
-        "id": 0,
-        "img": "/assets/jdsports-ip.png",
-        "alt": "mobile view of landing page demo"
-      },
-      {
-        "id": 1,
-        "img": "/assets/jdsports-ip2.png",
-        "alt": "mobile view of shop by category demo"
-      }
-    ]
-  },
-  "kidsloop": {
-    "title": "KidsLoop Coding Assignment",
-    "desc": "In October 2021, KidsLoop briefed me to recreate a sign-in page design using a DOM rendering framework.",
-    "body": " The finished responsive design should scale across a range of screen resolutions and devices. Add a dark / light theme toggle and switch between two icons. Shown in the slider opposite are slides from the final demo, which included support for multi language translation and accessibility.",
-    "slidesContainerId": "kl-slides",
-    "className": "dot-kl",
-    "img": "/assets/kidsloop-macbook-pro.png",
-    "alt": "design on macbook pro",
-    "techstack": ["HTML5", "CSS", "React JS", "REST APIs"]
-  },
-  "qbots": {
-    "title": "qEnergy Dashboard",
-    "desc": "Smart energy dashboards for energy saving analytics",
-    "body": "I developed smart energy dashboards for SME and Enterprise customers offering insights and savings predictions based on energy usage data collected over day and monthly periods.",
-    "img": "/assets/QEnergy-Dashboard.png",
-    "techstack": ["HTML5", "CSS", "JavaScript", "React JS", "eCharts"]
-  },
   "wrenkitchens": {
     "title": "Wren Kitchens Planner 2D",
     "desc": "Bespoke software development for Switch and Save",
     "body": "In 2022 I worked on Switch and Save, a price comparison tool for Planner 2D used by the Kitchen Designers in showrooms to walk the customer through a series of design choices. Based on the appliances they picked they will be shown a set of cheaper base units or appliances. For example the 3D render shown opposite is refreshed behind the scenes after the user confirms a selected appliance in Switch and Save, which is then updated in design choices. Finally when the customer views the basket page they will be able to see a summary of the material and unit costs.",
-    "slides": [
-      {
-        "id": 0,
-        "img": "/wrenders/milano-range.jpg",
-        "alt": "planner design choices"
-      },
-      {
-        "id": 1,
-        "img": "/wrenders/vogue-range.jpg",
-        "alt": "planner design choices"
-      }
-    ],
     "previews": [
       {
         "id": 0,
@@ -88,7 +31,76 @@
         "alt": "vogue range"
       }
     ],
-    "techstack": ["CSS", "JavaScript", "TypeScript", "React JS"]
+    "slides": [
+      {
+        "id": 0,
+        "img": "/wrenders/milano-range.jpg",
+        "alt": "planner design choices"
+      },
+      {
+        "id": 1,
+        "img": "/wrenders/vogue-range.jpg",
+        "alt": "planner design choices"
+      }
+    ],
+    "techstack": ["HTML5", "CSS", "React JS", "JavaScript", "TypeScript"]
+  },
+  "kidsloop": {
+    "title": "KidsLoop Coding Assignment",
+    "desc": "In October 2021, KidsLoop briefed me to recreate a sign-in page design using a DOM rendering framework.",
+    "body": " The finished responsive design should scale across a range of screen resolutions and devices. Add a dark / light theme toggle and switch between two icons. Shown in the slider opposite are slides from the final demo, which included support for multi language translation and accessibility.",
+    "slidesContainerId": "kl-slides",
+    "className": "dot-kl",
+    "img": "/assets/kidsloop-macbook-pro.png",
+    "alt": "kidsloop design on macbook pro",
+    "techstack": ["HTML5", "CSS", "React JS", "JavaScript", "REST API"]
+  },
+  "qbots": {
+    "title": "qEnergy Dashboard on macbook pro",
+    "desc": "Smart energy dashboards for energy saving analytics",
+    "body": "I developed smart energy dashboards for SME and Enterprise customers offering insights and savings predictions based on energy usage data collected over day and monthly periods.",
+    "img": "/assets/QEnergy-Dashboard.png",
+    "techstack": ["HTML5", "CSS", "JavaScript", "React JS", "eCharts"]
+  },
+  "intellicentrics": {
+    "title": "Intellicentrics mobile app",
+    "desc": "Refreshed responsive design",
+    "body": "Front-end development and responsive mobile design.",
+    "img": "/assets/ip6-secure.png",
+    "alt": "Intellicentrics mobile app design on iphone",
+    "techstack": ["React Native", "JavaScript", "TypeScript"]
+  },
+  "jdsports": {
+    "title": "JD Sports",
+    "desc": "Desktop and mobile landing pages",
+    "body": "Desktop landing pages and mobile responsive design.",
+    "techstack": ["Photoshop", "HTML5", "CSS", "JavaScript", "jQuery"],
+    "slidesContainerId": "jd-slides",
+    "className": "dot-jd",
+    "previews": [
+      {
+        "id": 0,
+        "img": "/assets/jdsports-ip.png",
+        "alt": "mobile view of landing page demo"
+      },
+      {
+        "id": 1,
+        "img": "/assets/jdsports-ip2.png",
+        "alt": "mobile view of shop by category demo"
+      }
+    ],
+    "slides": [
+      {
+        "id": 0,
+        "img": "/assets/jdsports-ip.png",
+        "alt": "mobile view of landing page demo"
+      },
+      {
+        "id": 1,
+        "img": "/assets/jdsports-ip2.png",
+        "alt": "mobile view of shop by category demo"
+      }
+    ]
   },
   "skills": [
     {
@@ -104,7 +116,7 @@
       "subtitle": "Cascading style sheets",
       "img": "",
       "alt": "",
-      "desc": "I use CSS to enable the separation of presentation and content, including layout, colours and fonts. CSS is a cornerstone technology of the web which is constantly evolving in scope and features, alongside HTML and JavaScript. "
+      "desc": "I use CSS to enable the separation of presentation and content. This includes layout, colours and fonts. CSS is a cornerstone technology of the web which is constantly evolving in scope and features, alongside HTML and JavaScript. "
     },
     {
       "title": "SASS",
@@ -118,14 +130,14 @@
       "subtitle": "Javascript programming",
       "img": "",
       "alt": "javascript logo",
-      "desc": "JavaScript usually abbreviated as JS, is a high level programming language that conforms to the ECMA Script specification.  It has dynamic typing, object-oriented features, and functions are first-class citizens. It has evolved from from humble beginnings in the 1990s into a hugely popular web development ecosystem that consists of Node, Node package manager and frameworks such as React, Angular and Vue to name just a few."
+      "desc": "JavaScript often abbreviated as JS, is a high level programming language that conforms to the ECMA Script specification. It has dynamic typing, object-oriented features, and functions are first-class citizens. It has evolved from humble beginnings in the 1990s into a hugely popular web development ecosystem that consists of Node, Node package manager and UI frameworks such as React, Angular, Vue, Vite and so on."
     },
     {
       "title": "React JS",
       "subtitle": "React JS Library",
       "img": "",
       "alt": "react logo",
-      "desc": "React usually abbreviated as React, is a free and open-source JavaScript library for building user interfaces with composable UI components. Its key selling point is its faster re-rendering of HTML document elements. It is maintained by Facebook and a community of developers and companies. I use React in the development of single-page applications or mobile web applications."
+      "desc": "React JS is a free and open-source JavaScript library for building user interfaces with re-usable components. The unique selling point is in its faster re-rendering of the HTML document compared to older methods of direct document manipulation. I use React to develop single-page apps (SPAs) and dashboard apps."
     },
     {
       "title": "Node JS",
@@ -135,11 +147,11 @@
       "desc": "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. As an asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications."
     },
     {
-      "title": "REST APIs",
+      "title": "REST API",
       "subtitle": "Representational State Transfer",
       "img": "",
       "alt": "",
-      "desc": "REST or Representational State Transfer is a process for distributed network systems. REST APIs are typically used to make asynchronous requests to fetch data from servers and post data from a contact form or sign up form."
+      "desc": "REST APIs or Representational State Transfer is a process for distributed network systems. REST APIs are typically used to make asynchronous requests to fetch data from servers and also to submit data the user has entered into a web form."
     }
   ]
 }

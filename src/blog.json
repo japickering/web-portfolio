@@ -1,10 +1,9 @@
 {
   "posts": [
     {
-      "date": "07/10/2021 ",
+      "date": "07/10/2021",
       "slug": "2021-10-7-post-title",
       "title": "5 ways to use SASS to supercharge your design workflow",
-      "author": "James Pickering",
       "summary": "Sass has useful features that aren’t supported in regular CSS: nesting, mixins, and modules that help you write clean and maintainable CSS code.",
       "img": "/posts/macbook-desk.jpg",
       "alt": "kung fu",
@@ -40,7 +39,6 @@
       "date": "17/10/2021",
       "slug": "2021-10-17-top-10-css",
       "title": "Top CSS Techniques to boost your workflow today",
-      "author": "James Pickering",
       "summary": "Raise your CSS game with these simple techniques.",
       "img": "/posts/colour-pencils.jpg",
       "alt": "coloured pencils",
@@ -81,7 +79,6 @@
       "date": "25/10/2021",
       "slug": "2021-10-25-responsive-sidebar-javascript",
       "title": "Create a Responsive Sidebar in CSS and JavaScript - Part 1",
-      "author": "James Pickering",
       "summary": "In this tutorial I'll assume you have a basic knowledge of HTML, CSS and vanilla Javascript. With a bit of effort you can apply the techniques here to any future JS framework. In part one of this tutorial I explain how I created the responsive sidebar for my portfolio.",
       "img": "/posts/responsive-sidebar.png",
       "alt": "screenshot of a sidebar menu",
@@ -128,7 +125,6 @@
       "date": "01/11/2021",
       "slug": "2021-11-01-responsive-sidebar-javascript-pt2",
       "title": "Extend the Sidebar using ReactJS - Part 2",
-      "author": "James Pickering",
       "summary": "In part one, I showed you how I wrote the HTML and CSS for the sidebar. In this part I'll walk you through how I built the sidebar using React hooks and arrow functions, and applying code encapsulation. This is a good thing because I can control sidebar features independently of other components.",
       "img": "",
       "alt": "",

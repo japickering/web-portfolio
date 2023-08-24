@@ -5,7 +5,7 @@ import { faCalendar, faBackward } from '@fortawesome/free-solid-svg-icons';
 
 export default function BlogPost({ date, title, summary, img, alt, content }) {
   return (
-    <section className='blog' tabIndex='0'>
+    <section className='blog'>
       <div className='content fadein'>
         <h2 className='title'>{title}</h2>
         <h4>
